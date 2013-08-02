@@ -15,9 +15,7 @@ var FILES = fs.readdirSync(path.resolve(__dirname, 'files'))
 	});
 
 module.exports = function (Parser, callback) {
-	var TIMES = [];
-
-	async.eachSeries(
+	async.mapSeries(
 		FILES,
 		function (item, done) {
 			var stream = startpoint(fs.readFileSync(item.file));
@@ -27,15 +25,14 @@ module.exports = function (Parser, callback) {
 			var parser = new Parser({
 				onend: function () {
 					var toc = process.hrtime(tic);
-					TIMES.push(toc);
-					setImmediate(done.bind(null, null));
+					setImmediate(done.bind(null, null, toc));
 				}
 			});
 			stream.pipe(parser);
 		},
-		function () {
-			var stat = summary(TIMES.map(function (time) {
-				return (time[0] * 1e9 + time[1]) / 1e6;
+		function(err, times) {
+			var stat = summary(times.map(function (time) {
+				return time[0] * 1e3 + time[1] / 1e6;
 			}));
 
 			console.log(stat.mean().toPrecision(6) + ' ms/file ± ' + stat.sd().toPrecision(6));
