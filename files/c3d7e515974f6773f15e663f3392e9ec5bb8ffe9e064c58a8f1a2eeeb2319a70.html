@@ -1,0 +1,2370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+	<meta name="pagecaching" content="859"/>
+	<meta name="server_addr" content="192.155.49.96"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		   
+	   <script type="text/javascript" src="http://i.techweb.com/infoweek/detect.js"></script>
+	   
+	
+<script type = "text/javascript">
+
+function getQuerystring(key, default_)
+{
+  if (default_==null) default_="";
+  key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
+  var qs = regex.exec(document.location.search);
+  if(qs == null)
+    return default_;
+  else
+    return qs[1];
+}
+/* GET QUERYSTRING*/
+
+
+/* MoFuse Mobile Detect & Redirect */
+var mfp_url = 'http://mobile.informationweek.com/';
+var mfp_host_name = document.location.hostname;
+var mfp_request_uri = document.location.pathname;
+var mfp_no_mobile = document.location.search;
+var mfp_cookie = document.cookie;
+var mfp_ua = navigator.userAgent.toLowerCase();
+var nomobile_value = getQuerystring('nomobile');
+var mfp_devices = ['vnd.wap.xhtml+xml', 'sony', 'symbian', 'nokia', 'samsung', 'mobile', 'windows ce', 'epoc', 'opera mini', 'nitro', 'j2me', 'midp-', 'cldc-', 'netfront', 'mot', 'up.browser', 'up.link', 'audiovox', 'blackberry', 'ericsson', 'panasonic', 'philips', 'sanyo', 'sharp', 'sie-', 'portalmmm', 'blazer', 'avantgo', 'danger', 'palm', 'series60', 'palmsource', 'pocketpc', 'smartphone', 'rover', 'ipaq', 'au-mic', 'alcatel', 'ericy', 'vodafone', 'wap1', 'wap2', 'teleca', 'playstation', 'lge', 'lg-', 'iphone', 'android', 'htc', 'dream', 'webos', 'bolt', 'nintendo'];
+function mf_detect(mfp_ua, mfp_devices) {
+    for (var i in mfp_devices) {
+        if (mfp_ua.indexOf(mfp_devices[i]) != -1 && !((mfp_ua.indexOf('android') != -1 && mfp_ua.indexOf('mobile') == -1) || mfp_ua.indexOf('ipad') != -1)) {
+            return true;
+        }
+    }
+}
+
+if (nomobile_value != 1 && mfp_cookie.indexOf('mfp_no_mobile') == -1) {
+    if (mf_detect(mfp_ua, mfp_devices)) {
+        window.location = mfp_url + "?h=" + mfp_host_name + "&r=" + ((mfp_request_uri == '/government') ? '/' : mfp_request_uri);
+    }
+}
+
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+		<script src="http://j.maxmind.com/app/country.js" charset="ISO-8859-1" type="text/javascript"></script>
+		       <script src="http://twimgs.com/informationweek/js/geo/country-redirect-1.js"  type="text/javascript"></script>
+	<title>VMware Fights Android BYOD Headaches - Mobility - Wireless security - </title><meta property="og:title" content="VMware Fights Android BYOD Headaches -- InformationWeek" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" />
+<meta property="og:image" content="http://twimgs.com/infoweek/fbicons/iwk.bmp" />
+<meta property="og:site_name" content="Informationweek" />
+<meta property="og:description" content="VMware's BYOD ambitions kick into gear through its partnership with Verizon. But is the virtualization heavyweight making its mobile management play too late?" />
+<meta property="fb:admins" content="550301723,1033888255,100000279817523" />
+<meta property="fb:app_id" content="373537248182" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:site" content="@Informationweek" />
+<meta property="twitter:title" content="VMware Fights Android BYOD Headaches -- InformationWeek" />
+<meta property="twitter:description" content="VMware's BYOD ambitions kick into gear through its partnership with Verizon. But is the virtualization heavyweight making its mobile management play too late?" />
+<meta property="twitter:creator" content="@infomendler" />
+<meta property="twitter:url" content="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" />
+<meta property="twitter:image:src" content="http://twimgs.com/infoweek/fbicons/iwk.bmp" />
+<meta property="twitter:domain" content="http://www.informationweek.com" />
+<meta name="description" content="VMware's BYOD ambitions kick into gear through its partnership with Verizon. But is the virtualization heavyweight making its mobile management play too late?" />
+<meta name="headline" content="VMware Fights Android BYOD Headaches" />
+<meta name="news_keywords" content="VMware, Android, Horizon Mobile, Verizon, LG Intuition, Motorola RAZRM, Jaleh Rezaei, BYOD, mobile device management" />
+<meta name="created" content="May 15, 2013" />
+<meta name="y_key" content="15bba51c08c024d1" />
+<meta name="robots" content="index,follow" />
+<meta name="google-site-verification" content="0AR2TotTLaMmNGWUJJwZLPgbgJbcUHa-rYaIMRPch64" />
+<meta name="original-source" content="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" /><link href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" rel="canonical" />
+<link href="http://twimgs.com/informationweek/css/relatedReading/tabs.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="https://i.cmpnet.com/informationweek/whitepaper/v3/common/css/twlightbox.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
+    //<![CDATA[
+$.ajax({
+	   type: "GET",
+	   url: "/checkauth",
+	   data: {"referer": encodeURIComponent(document.referrer), "redirectTo": encodeURIComponent(window.location.href)},
+	   success: function(data){
+		   if (data != null)
+			{
+				window.location = data.redirectTo;
+			}
+	   },
+	   dataType: "json",
+	   async: false,
+	   cache: false
+	 });    //]]>
+</script>
+<script type="text/javascript" src="https://i.cmpnet.com/informationweek/whitepaper/v3/common/js/jquery.url.js"></script>
+<script type="text/javascript" src="https://i.cmpnet.com/informationweek/whitepaper/v3/common/js/md5_hash.js"></script>
+<script type="text/javascript" src="https://i.cmpnet.com/informationweek/whitepaper/v3/common/js/twlightbox.js"></script>
+<script type="text/javascript" src="https://i.cmpnet.com/informationweek/whitepaper/v3/common/js/nextgen.js?v2"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+                            $.ajax({
+                          url: "/index/welcome",
+                          type: 'POST',
+                          data: {"redirectTo": encodeURIComponent(window.location.href) },
+                          success: function(data) {
+                            $('.welcome').html(data);
+                            $('.welcome').nextGenInit({
+                                        width: 780,
+                                        siteUrlPrefix:''
+                                });
+                          }
+                        });
+});
+//]]>
+
+</script>	
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" /> 
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/iwk_refresh/css/iw-base.css" />
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/iwk_refresh/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/css/sidebar.css"/>    
+    <link rel="icon" href="http://twimgs.com/infoweek/favicon.ico" type="image/x-icon"/> 
+    <link rel="shortcut icon" href="http://twimgs.com/infoweek/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="http://twimgs.com/infoweek/apple-touch-icon.png"/>  
+    <link rel="publisher" href="https://plus.google.com/108720492902396433722/" />    
+    <script language="JavaScript" type="text/javascript" src="http://twimgs.com/informationweek/js/sidebar.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://twimgs.com/informationweek/nop/popup.js"></script>
+    <script type="text/javascript" src="http://twimgs.com/infoweek/iwk_refresh/js/tabbed-content.jquery.js"></script>
+    <link rel="image_src" href="http://twimgs.com/infoweek/share_iwk_80.jpg" />
+    <script type="text/javascript" src="http://i.ubm-us.net/shared/omniture/h_s_code_remote.js" ></script>
+	 <script src="http://ar.voicefive.com/bmx3/node.pli?pub=ubm"></script>
+	<!-- newly added css and js files for header navigation changes -->
+    <link rel="stylesheet" type="text/css" href="http://i.cmpnet.com/infoweek/css/contentslider.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iw-base-v1.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iw-sidebar-v1.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iwk-default-v1.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iwk-nav.css" />
+<link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/iwk_refresh/css/poll.css" />
+      <link rel="stylesheet" type="text/css" href="https://i.cmpnet.com/informationweek/whitepaper/v3/common/css/lightbox_registration.css" />
+      <link rel="stylesheet" type="text/css" href="https://i.cmpnet.com/informationweek/whitepaper/v3/common/css/lightbox_login.css" />
+      <link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/footernav/oct2012/footergreyblack.css" />
+      
+	<!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iwk-nav.ie.css" />
+  	<![endif]-->    
+    <script type="text/javascript" src="http://twimgs.com/informationweek/iwk_refresh/js/iwk-nav.jquery.js"></script>
+	
+<style>
+
+#subnav li {
+	background:url("http://twimgs.com/infoweek/seo/bullet_round_4px_003bb0.gif") no-repeat scroll left center transparent;
+	line-height:1.6em;
+	margin-top:0;
+	padding-left:10px;
+	text-indent:0;
+}
+base.css (line 1346)
+.navLevel2 {
+	color:#971C10;
+	font:bold 11px arial,helvetica,sans-serif;
+}
+#videoBoxOuter {
+	float: left;
+	border: 0;
+	width: 200px;
+	padding-right: 0px;
+}
+
+#videoBox {
+	float: left;
+	border: solid .02em #D8D8D8;
+	width: 172px;
+}
+
+#videoBoxTitle {
+	background-color: #D8D8D8;
+	color: #C00000;
+	font-family: geneva, arial, helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 10px 7px;
+}
+
+#videoBoxDisplayArea {
+	margin-left: 0px;
+	padding: 5px 5px 5px 5px;
+}
+
+#videoBoxDisplayArea img {
+	padding: 2px;
+	height: 40px;
+	width: 44px;
+	margin-right: 3px;
+}
+
+#videoBoxDisplayAreaText {
+	font-family: arial;
+	font-size: 11px;
+	color: #153E7E;
+}
+
+#videoBoxDisplayAreaSponsor {
+	font-family: geneva, arial, helvetica;
+	font-size: 0px;
+	text-align: right;
+}
+
+</style>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-5009925-16']);
+        _gaq.push(['_setDomainName', 'informationweek.com']);
+	_gaq.push(['_trackPageview']);
+			_gaq.push(['_trackEvent']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+	<script type="text/javascript" src="http://twimgs.com/informationweek/js/disqus/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="http://twimgs.com/informationweek/js/disqus/disqusHints.js"></script>
+	<link rel="stylesheet" href="http://twimgs.com/infoweek/iwk_refresh/css/colorbox.css" type="text/css" />
+	<link rel="stylesheet" href="http://twimgs.com/informationweek/css/disqus/disqusHints.css" type="text/css" />
+
+
+<script type='text/javascript'>
+	var _vwo_code=(function(){
+	var account_id=32069,
+	settings_tolerance=2000,
+	library_tolerance=1500,
+	use_existing_jquery=false,
+	// DO NOT EDIT BELOW THIS LINE
+	f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+</head>
+<body>
+	<div id="topAdContainer">
+		<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1199874/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Welcome_Ad_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1199874/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Welcome_Ad_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1199874/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Welcome_Ad_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/2146745/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Wallpaper_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/2146745/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Wallpaper_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/2146745/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Wallpaper_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/2146744/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Skin_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/2146744/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Skin_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/2146744/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Skin_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+	
+		</div>	
+<div id="custom-doc" class="container yui-t6">
+<header>
+	<div id="hd">
+	<script language="JavaScript">
+<!--
+function ValidateNo(NumStr, String) 
+{ 
+    for(var Idx=0; Idx<NumStr.length; Idx++) 
+    { 
+        var Char = NumStr.charAt(Idx); 
+        var Match = false; 
+
+        for(var Idx1=0; Idx1<String.length; Idx1++) 
+        { 
+            if(Char == String.charAt (Idx1)) 
+                Match = true; 
+        } 
+
+        if (!Match) 
+            return false; 
+    } 
+    return true; 
+} 
+
+
+function ValidateDetail() 
+{
+    if(document.examplepost.mobilenumber.value == "") 
+    { 
+       alert("Please specify phone number"); 
+       document.examplepost.mobilenumber.focus(); 
+       return false; 
+    } 
+
+    if(!ValidateNo(document.examplepost.mobilenumber.value,"1234567890- ")) 
+    { 
+        alert("Please Enter Only Number"); 
+        document.examplepost.mobilenumber.focus(); 
+        return false; 
+    } 
+
+    return true; 
+} 
+
+//-->
+</script>
+<script type="text/javascript" src="http://twimgs.com/informationweek/js/omniture/custom_tracking.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.promo a,#header2 a,.meta-menu a,.main-menu a,#tw_superfooter_936 a,.article-resources.wrap a,.resources.clearfix a,.main-content.yui-b a,.related-resources.first.tabs a,.related-resources.tabs a,.main-content.yui-b a,#specialReportPressReleases2 a,#specialReportinDepth2 a,#specialReportArticles2 a,#specialReportLivestreamSchedule a,.returnToReport a,#specialReportArchive a,#specialReportElsewhere2 a,#specialReportCommentary2 a,#specialReportFeatured a,#specialReportBuzz2 a,#specialReportIGs a,#specialReportVideo2 a,.yui-u.first a,.archive a,.normalUL a,.financial.content a,#slider1 a,#footergrey a').click
+	(function(event){		
+		itc_tracking($(this),event);		
+	});		
+});
+</script><h1 class="mobility masthead">InformationWeek: The Business Value of Technology</h1>
+<a id="home-link" class="image-map" href="/mobility" title="InformationWeek: The Business Value of Technology">InformationWeek: The Business Value of Technology</a>
+<script type="text/javascript">
+var eventKey = "tw_mobility2013";
+var eventValue = "01";
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/bind?ckey1='+eventKey+';cvalue1='+escape(eventValue.toLowerCase())+'; expiresDays=9125;adct=text/html;misc=123"></scri'+'pt>');
+</script>
+<div class="meta-menu">
+	<!-- main section indicator -->
+	<nav>
+<ul class="sections">
+    <li class="first">
+        <a title="Home" href="/" name="iwk-header-navbar-home"><span>Home</span></a>
+    </li>
+    <li>
+        <a title="News" href="/news" name="iwk-header-navbar-news"><span>News</span></a>
+    </li>
+    <li>
+        <a title="Columns" href="/columns" name="iwk-header-navbar-columns"><span>Commentary</span></a>
+    </li>
+    <li>
+        <a title="Video" href="/video" name="iwk-rc-video"><span>Video</span></a>
+    </li>
+    <li>
+        <a title="Slideshows" href="/galleries" name="iwk-header-navbar-slideshows"><span>Slideshows</span></a>
+    </li>
+    <li>
+        <a title="Reports" href="http://reports.informationweek.com/" name="iwk-header-navbar-reports"><span>Reports</span></a>
+    </li>
+    <li class="more">
+        <a title="Tech Centers" rel="dropmenuTC" href="#"><span>Tech Centers</span></a><ul class="sub-menu">    <li>
+        <a href="/government/cloud">Government Cloud Computing</a>
+</li>    <li>
+        <a href="/tech-center/mobile-security">Mobile Security</a>
+</li>    <li>
+        <a href="/tech-center/collaboration-technology">UC Collaboration Technology</a>
+</li>    <li>
+        <a href="/tech-center/storage-virtualization">Virtual Infrastructure</a>
+</li>    <li>
+        <a href="/tech-center/backup-recovery">Backup &amp; Recovery - sponsored by Asigra</a>
+</li></ul>
+    </li>
+</ul></nav>
+   
+	<!-- / main section indicator -->
+    <!-- right nav -->
+	<nav>
+<ul class="resources">
+	<li class="first"><a href="/ipad?cid=iwk-header-spot-ipad">IW Mobile</a></li>
+    <li><a href="/rss" name="iwk-header-rss-feeds">RSS</a></li>
+	     		<li><a href="http://www.informationweek.com/customer-support" target="_blank">Subscribe</a></li>
+  	    <li><a href="/newsletters/index?cid=iwk_newsletter_header" name="iwk-header-newsletter">Newsletters</a></li>
+    <li><a href="/events" name="iwk-header-events">Events</a></li>
+    <li><a href="/whitepaper" target="_blank" title="Digital White Papers, Case Studies, Webcasts, and Presentations" name="iwk-header-twdl">White Papers</a></li>
+</ul>
+</nav>
+	<!-- / right nav -->
+</div>
+
+<div class="main-menu">
+<nav>
+<ul>
+    <li class="first">
+        <a title="Software" href="/software" name="iwk-header-navbar-software"><span>Software</span></a>
+    </li>
+    <li>
+        <a title="Security" href="/security" name="iwk-header-navbar-security"><span>Security</span></a>
+    </li>
+    <li>
+        <a title="Cloud" href="/cloud-computing" name="iwk-header-navbar-cloud"><span>Cloud</span></a>
+    </li>
+    <li>
+        <a title="Mobility" class="current" href="/mobility" name="iwk-header-navbar-mobility"><span>Mobility</span></a>
+    </li>
+    <li>
+        <a title="Social Business" href="/social-business" name="iwk-header-navbar-socialbusiness"><span>Social Business</span></a>
+    </li>
+    <li>
+        <a title="Big Data" href="/big-data" name="iwk-header-navbar-bigdata"><span>Big Data</span></a>
+    </li>
+    <li>
+        <a title="Windows" href="/windows" name="iwk-header-navbar-windows"><span>Windows</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Global CIO" href="/global-cio" name="iwk-header-navbar-globalcio"><span>Global CIO</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Government" href="/government" name="iwk-header-navbar-gov"><span>Government</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Healthcare" href="/healthcare" name="iwk-header-navbar-healthcare"><span>Healthcare</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Education" href="/education" name="iwk-header-navbar-education"><span>Education</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Financial" href="/financialservices" name="iwk-header-navbar-financial"><span>Financial</span></a>
+    </li>
+    <li class="highlight">
+        <a title="SMB" href="/smb" name="iwk-header-navbar-smb"><span>SMB</span></a>
+    </li>
+    <li class="more last">
+        <a href="#"><span>More</span></a><ul class="sub-menu">    <li>
+        <a title="Hardware" class="c" href="/hardware" name="iwk-header-navbar-hardware">Hardware</a>
+</li>    <li>
+        <a title="Internet" class="c" href="/cloud-computing" name="iwk-header-navbar-internet">Internet</a>
+</li>    <li>
+        <a title="Interop" class="c" href="/news/interop" name="iwk-header-navbar-interop">Interop</a>
+</li>    <li>
+        <a title="Mobile World Congress" class="c" href="/news/specialreport/mobile-world-congress" name="iwk-header-navbar-mwc">Mobile World Congress</a>
+</li>    <li>
+        <a title="Personal Tech" class="c" href="/personal-tech" name="iwk-header-navbar-personaltech">Personal Tech</a>
+</li>    <li>
+        <a title="RSA" class="c" href="/news/specialreport/rsa" name="iwk-header-navbar-rsa">RSA</a>
+</li>    <li>
+        <a title="Valley View" class="c" href="/news/specialreport/valleyview" name="iwk-header-navbar-valleyview">Valley View</a>
+</li>    <li>
+        <a title="Windows 8 Super Guide" class="c" href="http://www.informationweek.com/news/software/windows8/232700509" name="iwk-header-navbar-mwc">Windows 8 Super Guide</a>
+</li></ul>
+    </li>
+</ul></nav>
+</div>
+
+<div class="account">
+	<div class="welcome">
+	<!-- dynamically loaded from /welcome.php -->
+	</div>
+</div>
+
+
+<form class="site-search" action="/sitesearch" method="get" role="search">
+	<div class="overlabel-container">
+		<input type="hidden" name="sort" value="publishDate desc"/>
+		<input type="hidden" name="site_id" value="300001" />
+		<label for="queryText" class="overlabel">Search</label>
+		<input id="queryText" type="text" class="text" name="queryText" value="" />
+	</div>
+	<input type="submit" value="" class="button" />
+</form>
+
+<!-- header promo area -->   
+<!-- E2 Conference Boston 2013 -->
+<div class="promo">
+	<a href="http://www.e2conf.com/boston/?_mc=MP_BTMADNAV" target="new"><img class="ad" src="http://twimgs.com/informationweek/promo/e2-13b_200x61-iwk-c.gif" width="200" height="61" hspace="0" vspace="0" border="0" alt="e2 Conference & Expo - Boston 2013" title="e2 Conference & Expo - Boston 2013" /></a>
+</div>
+<!-- / E2 Conference Boston 2013 -->		
+	<div class="subnavSpacer"></div>
+	
+	<div id="subnav">
+		<nav>
+<div style="margin: 0 0 0 15px; padding: 0; width: 90px; float: left;"><ul>
+    <li>
+        <a title="Smartphones" href="/mobility/smart-phones">Smartphones</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 5px; padding: 0; width: 110px; float: left;"><ul>
+    <li>
+        <a title="Mobile Business" href="/mobility/business">Mobile Business</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 5px; padding: 0; width: 160px; float: left;"><ul>
+    <li>
+        <a title="3G/Wireless Broadband" href="/mobility/3g">3G/Wireless Broadband</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 5px; padding: 0; width: 77px; float: left;"><ul>
+    <li>
+        <a title="Wi-Fi VOIP" href="/mobility/voip">Wi-Fi VOIP</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 5px; padding: 0; width: 85px; float: left;"><ul>
+    <li>
+        <a title="Wi-Fi/WiMax" href="/mobility/wifi-wimax">Wi-Fi/WiMax</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 5px; padding: 0; width: 107px; float: left;"><ul>
+    <li>
+        <a title="Wireless Security" href="/mobility/security">Wireless Security</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 5px; padding: 0; width: 56px; float: left;"><ul>
+    <li>
+        <a title="802.11x" href="/mobility/80211x">802.11x</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 9px; padding: 0; width: 48px; float: left;"><ul>
+    <li>
+        <a title="RFID" href="/mobility/rfid">RFID</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div style="margin: 0 0 0 3px; padding: 0; width: 58px; float: left;"><ul>
+    <li>
+        <a title="WLAN" href="/mobility/wlan">WLAN</a>
+    </li>
+</ul><!-- closing finally --></div>
+<div class="subnav_more_box"><span class="subnav_more_header" >
+        <a href="#">More Mobility</a>
+</span><ul class="subnav_more_list">    <li class="margin: 0 0 0 80px; padding: 0; width: 180px; float: left;">
+        <a title="Messaging" class="c" href="/mobility/messaging">Messaging</a>
+</li>    <li class="margin: 0 0 0 80px; padding: 0; width: 160px; float: left;">
+        <a title="Muni Wireless" class="c" href="/mobility/muni-wireless">Muni Wireless</a>
+</li>    <li class="margin: 0 0 0 15px; padding: 0; width: 180px; float: left;">
+        <a title="Fixed Mobile Convergence" class="c" href="/mobility/convergence">Fixed Mobile Convergence</a>
+</li>    <li class="margin: 0 0 0 80px; padding: 0; width: 160px; float: left;">
+        <a title="Mobility Commentary" class="c" href="/mobility/columns">Mobility Commentary</a>
+</li>    <li class="margin: 0 0 0 80px; padding: 0; width: 160px; float: left;">
+        <a title="Mobility Slideshows" class="c" href="/galleries/wireless">Mobility Slideshows</a>
+</li>    <li class="margin: 0 0 0 80px; padding: 0; width: 160px; float: left;">
+        <a title="Mobility Stories" class="c" href="/mobility/archives">Mobility Stories</a>
+</li>    <li class="margin: 0 0 0 80px; padding: 0; width: 140px; float: left;">
+        <a title="Video" class="c" href="/video-home">Video</a>
+</li></ul><!-- closing finally --></div>
+</nav>
+
+<style>
+#hd #subnav .subnav_more_box {
+	margin: 0 0 0 5px; 
+	background-color:#eee; 
+	padding: 0; 
+	width: 130px; 
+	float: left;
+	}
+#hd #subnav .subnav_more_header { 
+	background: transparent url(http://twimgs.com/informationweek/iwk_refresh/img/arrow_blue_down_more.gif) no-repeat 2px -2px; 
+	display: block; 
+	}
+#hd #subnav .subnav_more_header a {
+	margin: 0 0 0 20px;
+	line-height: 1.6em;
+	font-size: 93%;
+	}
+#hd #subnav .subnav_more_list	{
+	position: absolute;
+	z-index: 999999;
+	background-color:#eee; 
+	width: 200px;
+	padding: 0 0 10px 0;
+	}
+#hd #subnav .subnav_more_list li {
+	padding: 0;
+	margin: 0 0 0 20px;
+	}
+#hd #subnav .subnav_more_list { 
+	display: none; 
+	}
+</style>
+<script>
+$(document).ready(function() {
+	$('.subnav_more_box').hover(
+		function () {
+    	$('.subnav_more_list').show();
+  	}, 
+  	function () {
+    	$('.subnav_more_list').hide();
+  	}
+	);
+});
+</script>
+	</div><!--  End: subnav  -->
+	
+	<div class="subnavBottom"></div>
+<div class="banner-ad">
+	<p></p>
+	<center>
+		<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200349/0/225/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Top_728x90;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200349/0/225/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Top_728x90;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200349/0/225/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Top_728x90;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+	</center>
+</div>
+<div class="h_bannerBottom"></div>
+		</div>
+	</header>
+	<script>var ngGatedContentPage = '1';</script>	<div id="bd" class="article content">
+		<script type="text/javascript" src="/common/contentgating.js?version=1.2"></script>
+<script>
+function emailLauncher(filePath,storyURL) {
+	uri = filePath + encodeURIComponent(storyURL);		
+	window.open(uri,"","toolbar=no,scrollbars=auto,location=no,status=no,width=733,height=590,resizable=1");
+}
+</script>
+<div id="yui-main">
+<div class="main-content yui-b">
+<div class="article-v2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article>
+		<h3 class="sectionPageHeader">News</h3>
+	<h1>VMware Fights Android BYOD Headaches</h1>
+	<div class="author-header clearfix">
+          <div class="author-headerInner clearfix">   
+          
+	            <img src="http://twimgs.com/infoweek/authors/blogger/8070.jpg" class="author-photo">
+	           		            			            	
+		            	          <div class="author-name">Michael  Endler</div>
+					 		            	
+		            <div class="author-role">Associate Editor, InformationWeek.com</div>
+	            	            <div class="author-link-grouping">
+	            		            <a title="" href="/authors/Michael-Endler" class="authorContinue">See more from Michael</a>
+		         		            <div class="author-links">
+			              <strong>Connect directly with Michael:</strong>
+			              						         					  <a href="http://twitter.com/infomendler" class="social-button social-tw"><span>Twitter</span></a>
+       					  	                            					  			                                        <a href="/authors/rss/Michael-Endler" class="social-button social-rss"><span>RSS</span></a>
+                          <a class="first" title="" href="/authors/Michael-Endler#bio">Bio</a> &nbsp;|&nbsp; <a title="" href="mailto:Michael.Endler@ubm.com">Contact</a>
+		            </div><!-- /author-links -->
+	            </div><!-- / author-link-grouping -->
+           </div><!-- author-headerInner -->
+
+           <div class="clearAuthor"></div>
+
+</div>
+<!-- / authorArea_Article -->
+
+	<h2 class="dek">VMware's BYOD ambitions kick into gear through its partnership with Verizon. But is the virtualization heavyweight making its mobile management play too late?</h2>
+		<style>
+.main-content ul.social-links li, .main-content ul.social-links-hp li {
+    margin-left: 11px !important;
+}
+</style>
+<script language="javascript">
+<!--
+function emaillauncher(art_id,articleUrl) {	
+	if(articleUrl == ''){		
+		articleUrl = '/mobility/security/vmware-fights-android-byod-headaches/240154955';
+	}
+uri = "/email?articleUrl=" +articleUrl ;
+window.open(uri,"","toolbar=no,scrollbars=auto,location=no,status=no,width=733,height=590,resizable=1")
+}
+//-->
+</script>
+   
+          <!-- top social links -->
+          <ul class="social-links clearfix">
+            <li class="first">
+				<a href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955#mc_jive">
+											<span class="comments-count">2</span>
+										<a class="caption" href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955#mc_jive" style="color: #003BB0;">Comments</a>
+						
+									</a>
+			</li>
+    		<li>
+            <!-- facebook badge (XFBML version) needs SDK -->
+
+			<div id="fb-root"></div>
+			<script>
+			
+			( function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+				  fjs.parentNode.insertBefore(js, fjs);
+			}
+			(document, 'script', 'facebook-jssdk'));</script>
+            <fb:like send="false" action="like" layout="box_count" href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" width="450" show_faces="true"></fb:like>
+            
+            <!-- / facebook badge (XFBML version) -->
+            </li>
+            <li>
+              	            <!-- twitter badge -->
+            <a href="https://twitter.com/share" class="twitter-share-button" data-counturl="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" data-url="http://twb.io/12bpGJe" data-text="VMware Fights Android BYOD Headaches" data-via="InformationWeek" data-lang="en" data-related="InformationWeek,infomendler" data-count="vertical">Tweet</a>
+		  	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <!-- / twitter badge -->   
+            </li>
+		  
+             <li> <g:plusone size="Tall" annotation="bubble" href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955"></g:plusone>
+             <!-- Place this render call where appropriate -->
+            <!-- Google+ badge -->
+             <script type="text/javascript">
+               (function() {
+                   var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                   po.src = 'https://apis.google.com/js/plusone.js';
+                   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+               })();
+            </script>
+            </li>
+            
+            <li>
+            <!-- LinkedIn Badge -->
+            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+		  <script type="IN/Share" data-counter="top" data-url="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955"></script>
+            <!-- / LinkedIn Badge -->
+            </li>
+            
+            <li>
+            <!-- stumbleupon badge -->
+            <su:badge layout="5" location="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955"></su:badge>
+            <script type="text/javascript">
+              (function() {
+                var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+                li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+              })();
+            </script>
+            <!-- / stumbleupon badge -->
+            <li>
+
+            <li>
+            <!-- Reddit -->
+              <script type="text/javascript">
+	  				reddit_url = "http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955";
+	  				reddit_title = "VMware Fights Android BYOD Headaches";
+  			  </script>
+            <script type="text/javascript" src="http://www.reddit.com/static/button/button3.js"></script>
+            <!-- / Reddit -->
+            </li>
+            
+			<!-- Below is commented . This will be handled in IWBTN - 53          
+
+  			<li class="sep">
+           download (a PDF of) this story 
+            <a class="social-button pdfDL" href="" title="">PDF</a> <a class="caption" href="" title="">PDF</a>
+             / download (a PDF of) this story 
+            </li>-->
+            
+            <li class="sep">
+            <!-- Email this story -->
+                <a class="social-button mail" href="javascript:emaillauncher('240154955','')" title="Click To Send Email">Mail</a>
+                <a class="caption" href="javascript:emaillauncher('240154955','')" title="Click To Send Email">Mail</a>
+            <!-- / Email this story -->
+            </li>
+            
+            <li>
+            <!-- Print this story -->
+                <a class="social-button print contentgating_article"  href="?printer_friendly=this-page" title="Print">Print</a>
+                <a class="caption contentgating_article"  href="?printer_friendly=this-page" title="Print">Print</a>
+            <!-- / Print this story -->
+            </li>
+         </ul>
+        <!-- / top social links -->
+        
+        
+        <div class="clearBoth"></div>	
+			 <div class="byline">
+		 	   	<span class="author-name"><a href="/authors/Michael-Endler">Michael Endler</a></span>	<span id="byline">|</span>
+<span class="pub-date">May 15, 2013 11:55 AM </span>
+</div>
+    <!--body-->
+ 
+<span id="articleBody">
+<div class="IntelliTXT">
+<p class="firstP"><!-- KINDLE EXCLUDE -->
+<div class="inlineStoryImage inlineStoryImageRight">
+  <a href="http://www.informationweek.com/security/client/ten-top-password-managers/240153906"><img   src="http://twimgs.com/informationweek/galleries/automated/986/password_manager_slideshow_01_tn.jpg" alt="10 Top Password Managers" title="10 Top Password Managers" class="img175" /></a><br />
+  <div class="storyImageTitle">10 Top Password Managers</div>
+  <span class="inlinelargerView">(click image for slideshow)</span>
+</div>
+<!-- /KINDLE EXCLUDE -->
+VMware announced Wednesday the availability of its Horizon Mobile product for certain Android-based Verizon smartphones. The technology establishes a second instance of Google's mobile OS on a compatible device, allowing employees to keep their personal content separate from an IT-controlled workspace. 
+<p>
+Such partitions have been considered an ideal ever since workers began bringing their own smartphones into the office, but with many vendors already touting similar technologies of their own, it's not certain that VMware will gain traction in the crowded mobile enterprise management market. 
+
+<div class="article-resources wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br clear="all">
+<h3 class="articleResourcesHeader">More Mobility Insights</h3>
+<!-- Taxonomy ID:224309 --><!--cahe Keyhash : view_webcast_taxonomy_224309_insightsbox_count_2_startat_0--><!--cahe Keyhash : 0ab0ef5b0f103e9ca322e08432d48369--><h3>Webcasts</h3>		 
+     <!-- Taxonomy ID:224309 -->  
+<ul class="archive">
+				
+				<li><!--Rule 4 -->		
+					<a href="https://webinar.informationweek.com/Novell20130620?keycode=SBX&cid=SBX_iwk_well_Webcast_Wireless_security_mobility&itc=SBX_iwk_well_Webcast_Wireless_security_mobility&K=SBX_IWK_WL" name="SBX_iwk_well_Webcast_Wireless_security_mobility">
+				Putting the Mobile Employee to Work				</a>
+								</li>
+				
+				<li><!--Rule 4 -->		
+					<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1005928&cid=SBX_iwk_well_Webcast_Wireless_security_mobility&itc=SBX_iwk_well_Webcast_Wireless_security_mobility&K=SBX_IWK_WL" name="SBX_iwk_well_Webcast_Wireless_security_mobility">
+				Agile Mobile Development - faster response time to feedback				</a>
+								</li>
+						
+</ul>
+<a title='More Webcast' href='/webcast/mobility/more.html?cid=SBX_iwk_well_Webcast_Wireless_security_mobility&itc=SBX_iwk_well_Webcast_Wireless_security_mobility' class='continue'>More <span>>></span></a><!-- Taxonomy ID:224309 --><!--cahe Keyhash : view_whitepaper_taxonomy_224309_insightsbox_count_2_startat_0--><!--cahe Keyhash : 54650b2e90346dbb67aba2ec1d963a8e--><h3>White Papers</h3>		 
+     <!-- Taxonomy ID:224309 -->  
+<ul class="archive">
+				
+				<li><!--Rule 3 -->		
+					<a href="http://www.darkreading.com/blog/sophoslabs-insights/util/10717/download.html?cid=SBX_iwk_well_wp_Wireless_security_mobility&itc=SBX_iwk_well_wp_Wireless_security_mobility" name="SBX_iwk_well_wp_Wireless_security_mobility">
+				Mobile Device Security: What's Coming Next?				</a>
+								</li>
+				
+				<li><!--Rule 3 -->		
+					<a href="http://www.darkreading.com/blog/sophoslabs-insights/util/10716/download.html?cid=SBX_iwk_well_wp_Wireless_security_mobility&itc=SBX_iwk_well_wp_Wireless_security_mobility" name="SBX_iwk_well_wp_Wireless_security_mobility">
+				Ransomware: Hijacking Your Data				</a>
+								</li>
+						
+</ul>
+<a title='More White Papers' href='/whitepaper/mobility/more.html?cid=SBX_iwk_well_wp_Wireless_security_mobility&itc=SBX_iwk_well_wp_Wireless_security_mobility' class='continue'>More <span>>></span></a><!-- Taxonomy ID:224309 --><!--cahe Keyhash : view_analytics_taxonomy_224309_insightsbox_count_2_startat_0--><!--cahe Keyhash : 1a64ff753cf9c21c1f8c5b9ee7b2997e--><h3>Reports</h3>		 
+     <!-- Taxonomy ID:224309 -->  
+<ul class="archive">
+				
+				<li><!--Rule 7 -->		
+					<a href="http://reports.informationweek.com/abstract/18/8711/Mobility-Wireless/fundamentals-the-mobile-payment-frontier.html?cid=SBX_iwk_well_Analytics_Wireless_security_mobility&itc=SBX_iwk_well_Analytics_Wireless_security_mobility" name="SBX_iwk_well_Analytics_Wireless_security_mobility">
+				Fundamentals: The Mobile Payment Frontier				</a>
+								</li>
+				
+				<li><!--Rule 7 -->		
+					<a href="http://reports.informationweek.com/abstract/18/8623/Mobility-Wireless/strategy-optimize-your-mobile-infrastructure.html?cid=SBX_iwk_well_Analytics_Wireless_security_mobility&itc=SBX_iwk_well_Analytics_Wireless_security_mobility" name="SBX_iwk_well_Analytics_Wireless_security_mobility">
+				Strategy: Optimize Your Mobile Infrastructure				</a>
+								</li>
+						
+</ul>
+<a title='More Reports' href='/analytics/mobility/more.html?cid=SBX_iwk_well_Analytics_Wireless_security_mobility&itc=SBX_iwk_well_Analytics_Wireless_security_mobility' class='continue'>More <span>>></span></a></div>
+<p>
+<a href="http://www.vmware.com/company/news/releases/vmw-horizon-Verizon-051513.html">VMware Horizon Mobile</a> is available immediately for the LG Intuition and the Motorola RAZR M. New units will come ready to deploy the Android guest OS, but users who have previously purchased either phone can gain access as well. VMware plans to add support for additional models throughout the year.
+<p>
+IT managers once enjoyed uniform device deployments in which all employees were issued a pre-approved, easily managed device, such as a BlackBerry smartphone. As the bring-your-own device (BYOD) movement flooded the workplace with user-owned iPhones and Android models, however, IT staffers have been challenged to keep the devices secure while also respecting privacy concerns. Due to this tension, analysts have characterized the ability to isolate business data from personal data as the <a href="http://www.informationweek.com/hardware/handheld/six-tips-for-navigating-the-mdm-jungle/240008085">"holy grail" of mobile endpoint management</a>. 
+<p>
+<strong>[ The multitude of devices will test many IT teams' mobile application development plans. Read <a href="http://www.informationweek.com/development/mobility/9-challenges-to-your-mobile-app-strategy/240153865?itc=edit_in_body_cross">9 Challenges To Your Mobile App Strategy</a>. ]</strong>
+<p>
+The same is true at businesses that have eschewed BYOD for the corporate-owned, personally enabled (COPE) model, in which the company owns devices but allows employees to choose from a variety of options. Because smartphones have become so capable, many users use them for personal tasks, even when their employers own the devices. A division between work data and personal tasks allows companies to embrace this user tendency without putting corporate intellectual property at risk. 
+<p>
+By building its work-focused space around a guest OS, Horizon Mobile gives IT staffers particularly granular controls. Administrators can set passwords, push applications to devices or approve them for download from a corporate app catalog, enforce VPN requirements, remotely wipe data, and more -- all without affecting the user-dedicated portion of the device. It also boasts a secure browser and AES-256 encryption. 
+<p>
+It's worth noting that Horizon Mobile's implementation is somewhat different than other virtualization-based mobile security techniques. Thin clients are often praised for their security because they don't actually store data locally; whatever the user is working on essentially disappears once a session has been terminated. Horizon Mobile, in contrast, stores the second OS locally and uses a Type 2 hypervisor to run the second instance. 
+<p>
+As IT has been forced to wrangle an increasingly diverse spate of devices, vendors have stepped in to help, and many mobile management features -- such as remote wipe capabilities -- have <a href="http://www.informationweek.com/security/mobile/ibm-makes-enterprise-mobile-security-mov/240153882">become more or less commoditized</a>. BlackBerry, AT&T, AirWatch, MobileIron and others all have technologies, for example, that separate personal content from work content.
+<p>
+Despite the ubiquity of certain features, Jaleh Rezaei, director of product marketing for Horizon, said that VMware's approach is still distinct because it relies on virtualization. In an interview, she said most other approaches involve containerization processes, which require modification to individual apps. Because Horizon Mobile hosts corporate content in a complete OS, this extra step is unnecessary. Similarly, Rezaei said that because admins have access to an OS, rather than to just an app, they can control the workspace more tightly.
+<p>
+She also noted that Horizon Mobile could solve the problem of Android fragmentation. Many versions of Android are actively in use, making it difficult for IT admins to uniformly control the numerous variants that might be accessing their networks. Rezaei said that by orienting corporate activity around a standardized guest OS, VMware avoids this trouble. 
+<p>
+VMware Horizon Mobile is available immediately with perpetual licensing starting at $125 per user.		
+					<p>
+						<i>Enterprise Connect is bringing its content experts to several cities to deliver a day-long program to help you figure out whether and how SIP trunks are a fit for your enterprise. The program will explore the technical challenges, procurement issues and what the long-range potential is for SIP trunks. This program is a "must-attend" for anyone working on modernizing their enterprise's wide area network. Registration is free! Find out more about the <a href="http://app.reg.techweb.com/e/er?s=2150&lid=34970&elq=58821d39db1b4f60a9a7b115dbad060b">Implementing SIP Trunking</a> event now! </i>						<br clear="all">
+					</p>		
+			
+</div>
+</span>
+<div class="article-pagination">
+<div class="controls">
+	</div>
+</div>
+</article>
+<div class="author-footer clearfix">
+          <div class="author-footerInner clearfix">   
+          
+	            <img src="http://twimgs.com/infoweek/authors/blogger/8070.jpg" class="author-photo">
+	           		            	<div class="author-aboutHeader">About The Author</div>
+		            	<div class="author-about"> <em><a href="/authors/Michael-Endler#bio">Continued</a></em></div>
+	            	            <div class="author-link-grouping">
+	            		            <a title="" href="/authors/Michael-Endler" class="authorContinue">See more from Michael</a>
+		         		            <div class="author-links">
+			              <strong>Connect directly with Michael:</strong>
+			              						         					  <a href="http://twitter.com/infomendler" class="social-button social-tw"><span>Twitter</span></a>
+       					  	                            					  			                                        <a href="/authors/rss/Michael-Endler" class="social-button social-rss"><span>RSS</span></a>
+                          <a class="first" title="" href="/authors/Michael-Endler#bio">Bio</a> &nbsp;|&nbsp; <a title="" href="mailto:Michael.Endler@ubm.com">Contact</a>
+		            </div><!-- /author-links -->
+	            </div><!-- / author-link-grouping -->
+           </div><!-- author-headerInner -->
+
+           <div class="clearAuthor"></div>
+
+</div>
+<!-- / authorArea_Article -->
+
+<style>
+.main-content ul.social-links li, .main-content ul.social-links-hp li {
+    margin-left: 11px !important;
+}
+</style>
+<script language="javascript">
+<!--
+function emaillauncher(art_id,articleUrl) {	
+	if(articleUrl == ''){		
+		articleUrl = '/mobility/security/vmware-fights-android-byod-headaches/240154955';
+	}
+uri = "/email?articleUrl=" +articleUrl ;
+window.open(uri,"","toolbar=no,scrollbars=auto,location=no,status=no,width=733,height=590,resizable=1")
+}
+//-->
+</script>
+   
+          <!-- top social links -->
+          <ul class="social-links clearfix">
+            <li class="first">
+				<a href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955#mc_jive">
+											<span class="comments-count">2</span>
+										<a class="caption" href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955#mc_jive" style="color: #003BB0;">Comments</a>
+						
+									</a>
+			</li>
+    		<li>
+            <!-- facebook badge (XFBML version) needs SDK -->
+
+			<div id="fb-root"></div>
+			<script>
+			
+			( function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+				  fjs.parentNode.insertBefore(js, fjs);
+			}
+			(document, 'script', 'facebook-jssdk'));</script>
+            <fb:like send="false" action="like" layout="box_count" href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" width="450" show_faces="true"></fb:like>
+            
+            <!-- / facebook badge (XFBML version) -->
+            </li>
+            <li>
+              	            <!-- twitter badge -->
+            <a href="https://twitter.com/share" class="twitter-share-button" data-counturl="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955" data-url="http://twb.io/12bpGJe" data-text="VMware Fights Android BYOD Headaches" data-via="InformationWeek" data-lang="en" data-related="InformationWeek,infomendler" data-count="vertical">Tweet</a>
+		  	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <!-- / twitter badge -->   
+            </li>
+		  
+             <li> <g:plusone size="Tall" annotation="bubble" href="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955"></g:plusone>
+             <!-- Place this render call where appropriate -->
+            <!-- Google+ badge -->
+             <script type="text/javascript">
+               (function() {
+                   var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                   po.src = 'https://apis.google.com/js/plusone.js';
+                   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+               })();
+            </script>
+            </li>
+            
+            <li>
+            <!-- LinkedIn Badge -->
+            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+		  <script type="IN/Share" data-counter="top" data-url="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955"></script>
+            <!-- / LinkedIn Badge -->
+            </li>
+            
+            <li>
+            <!-- stumbleupon badge -->
+            <su:badge layout="5" location="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955"></su:badge>
+            <script type="text/javascript">
+              (function() {
+                var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+                li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+              })();
+            </script>
+            <!-- / stumbleupon badge -->
+            <li>
+
+            <li>
+            <!-- Reddit -->
+              <script type="text/javascript">
+	  				reddit_url = "http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955";
+	  				reddit_title = "VMware Fights Android BYOD Headaches";
+  			  </script>
+            <script type="text/javascript" src="http://www.reddit.com/static/button/button3.js"></script>
+            <!-- / Reddit -->
+            </li>
+            
+			<!-- Below is commented . This will be handled in IWBTN - 53          
+
+  			<li class="sep">
+           download (a PDF of) this story 
+            <a class="social-button pdfDL" href="" title="">PDF</a> <a class="caption" href="" title="">PDF</a>
+             / download (a PDF of) this story 
+            </li>-->
+            
+            <li class="sep">
+            <!-- Email this story -->
+                <a class="social-button mail" href="javascript:emaillauncher('240154955','')" title="Click To Send Email">Mail</a>
+                <a class="caption" href="javascript:emaillauncher('240154955','')" title="Click To Send Email">Mail</a>
+            <!-- / Email this story -->
+            </li>
+            
+            <li>
+            <!-- Print this story -->
+                <a class="social-button print contentgating_article"  href="?printer_friendly=this-page" title="Print">Print</a>
+                <a class="caption contentgating_article"  href="?printer_friendly=this-page" title="Print">Print</a>
+            <!-- / Print this story -->
+            </li>
+         </ul>
+        <!-- / top social links -->
+        
+        
+        <div class="clearBoth"></div>	
+
+<!--  Related Reading Box -->
+           
+      
+         <h3 class="resources">Related Reading</h3>
+    <div class="related-resources first tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-news" title="News">News</a></li>
+            <li><a href="#toc-commentary" title="Commentary">Commentary</a></li>
+            
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-news">News</a></h3>
+			<!--cahe Keyhash : view_news_taxonomy_224309_relatedbox_count_4_startat_0--><!--cahe Keyhash : 1780233173a0b9b91272b76b68ce41aa-->    <ul class="events">
+<li><a class="contentgating_article"  href="/mobility/security/vmware-fights-android-byod-headaches/240154955?cid=SBX_iwk_related_news_Wireless_security_mobility&itc=SBX_iwk_related_news_Wireless_security_mobility" title="VMware Fights Android BYOD Headaches">VMware Fights Android BYOD Headaches</a></li><li><a class="contentgating_article"  href="/security/encryption/apple-iphone-decryption-backlog-stymies/240154842?cid=SBX_iwk_related_news_Wireless_security_mobility&itc=SBX_iwk_related_news_Wireless_security_mobility" title="Apple iPhone Decryption Backlog Stymies Police">Apple iPhone Decryption Backlog Stymies Police</a></li><li><a class="contentgating_article"  href="/security/mobile/iphone-ipad-configuration-files-security/240150606?cid=SBX_iwk_related_news_Wireless_security_mobility&itc=SBX_iwk_related_news_Wireless_security_mobility" title="iPhone, iPad Configuration Files Security Hole Shown">iPhone, iPad Configuration Files Security Hole Shown</a></li><li><a class="contentgating_article"  href="/security/mobile/rims-blackberry-10-to-block-certain-pass/240143824?cid=SBX_iwk_related_news_Wireless_security_mobility&itc=SBX_iwk_related_news_Wireless_security_mobility" title="RIM's BlackBerry 10 To Block Certain Passwords">RIM's BlackBerry 10 To Block Certain Passwords</a></li><a class="continue" href="/news?cid=SBX_iwk_related_news_Wireless_security_mobility&itc=SBX_iwk_related_news_Wireless_security_mobility" title="More News">More News<span>&raquo;</span></a>                        
+    </ul>                    
+        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-commentary">Commentary</a></h3>
+			<!--cahe Keyhash : view_commentary_taxonomy_224309_relatedbox_count_4_startat_0--><!--cahe Keyhash : cc3af1b3dc439ea31e723b03f599a89a-->    <ul class="events">
+<li><a class="contentgating_article"  href="/mobility/security/carrier-iq-fights-back-with-consumer-das/232601851?cid=SBX_iwk_related_commentary_Wireless_security_mobility&itc=SBX_iwk_related_commentary_Wireless_security_mobility" title="Carrier IQ Fights Back With Consumer Dashboard">Carrier IQ Fights Back With Consumer Dashboard</a></li><li><a class="contentgating_article"  href="/mobility/smart-phones/apples-walled-garden-sledgehammer-needed/232600284?cid=SBX_iwk_related_commentary_Wireless_security_mobility&itc=SBX_iwk_related_commentary_Wireless_security_mobility" title="Apple's Walled Garden: Sledgehammer Needed">Apple's Walled Garden: Sledgehammer Needed</a></li><li><a class="contentgating_article"  href="/mobility/smart-phones/what-virtualization-can-do-for-your-smar/232300404?cid=SBX_iwk_related_commentary_Wireless_security_mobility&itc=SBX_iwk_related_commentary_Wireless_security_mobility" title="What Virtualization Can Do For Your Smartphone">What Virtualization Can Do For Your Smartphone</a></li><li><a class="contentgating_article"  href="/mobility/security/mdm-to-sandbox-or-not-to-sandbox/231902065?cid=SBX_iwk_related_commentary_Wireless_security_mobility&itc=SBX_iwk_related_commentary_Wireless_security_mobility" title="MDM: To Sandbox Or Not To Sandbox?">MDM: To Sandbox Or Not To Sandbox?</a></li><a class="continue" href="/news/columns?cid=SBX_iwk_related_commentary_Wireless_security_mobility&itc=SBX_iwk_related_commentary_Wireless_security_mobility" title="More Commentary">More Commentary<span>&raquo;</span></a>                        
+    </ul>        </div>
+    </div>
+    <div class="related-resources tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-most-popular" title="Most Popular">Most Popular</a></li>
+            <li><a href="#toc-web" title="On the Web">On the Web</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            
+            <h3 class="tab"><a name="toc-most-popular">Most Popular</a></h3>
+			<!--cahe Keyhash : view_mostpopular_taxonomy_224309_relatedbox_count_4_startat_0--><!--cahe Keyhash : 31a92a4b1e4506223c5c4f8c9caec479-->    <ul class="events">
+<li><a class="contentgating_article"  href="/mobility/security/mdm-to-sandbox-or-not-to-sandbox/231902065?cid=SBX_iwk_related_mostpopular_Wireless_security_mobility&itc=SBX_iwk_related_mostpopular_Wireless_security_mobility" title="MDM: To Sandbox Or Not To Sandbox?">MDM: To Sandbox Or Not To Sandbox?</a></li><li><a class="contentgating_article"  href="/security/mobile/9-tips-to-block-hotel-wi-fi-malware/240000211?cid=SBX_iwk_related_mostpopular_Wireless_security_mobility&itc=SBX_iwk_related_mostpopular_Wireless_security_mobility" title="9 Tips To Block Hotel Wi-Fi Malware">9 Tips To Block Hotel Wi-Fi Malware</a></li><li><a class="contentgating_article"  href="/security/mobile/android-researchers-demo-clickjacking-ro/240003197?cid=SBX_iwk_related_mostpopular_Wireless_security_mobility&itc=SBX_iwk_related_mostpopular_Wireless_security_mobility" title="Android Researchers Demo Clickjacking Rootkit Vulnerability">Android Researchers Demo Clickjacking Rootkit Vulnerability</a></li><li><a class="contentgating_article"  href="/security/management/centrify-harnesses-active-directory-for/240143050?cid=SBX_iwk_related_mostpopular_Wireless_security_mobility&itc=SBX_iwk_related_mostpopular_Wireless_security_mobility" title="Centrify Harnesses Active Directory For Mobile Device Management">Centrify Harnesses Active Directory For Mobile Device Management</a></li><a class="continue" href="/news/breakingnews?cid=SBX_iwk_related_mostpopular_Wireless_security_mobility&itc=SBX_iwk_related_mostpopular_Wireless_security_mobility" title="More Popular">More Popular<span>&raquo;</span></a>                        
+    </ul>        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-web">On the Web</a></h3>
+            
+<ul class="events">
+	
+				
+					<li>		
+					<a href="/aroundtheweb/mobility/blackberry-ceo-questions-future-of-table/456464534c3871395668646a69414a4c314c4c7447773d3d?cid=SBX_iwk_related_sociative_Wireless_security_mobility&itc=SBX_iwk_related_sociative_Wireless_security_mobility">
+					BlackBerry CEO Questions Future of Tablets					</a>
+					</li>
+				
+					<li>		
+					<a href="/aroundtheweb/mobility/network-threats-are-hitching-a-ride-in-m/326565767776474531534a4c6d397669326d71787a673d3d?cid=SBX_iwk_related_sociative_Wireless_security_mobility&itc=SBX_iwk_related_sociative_Wireless_security_mobility">
+					Network Threats Are Hitching a Ride in Mobile Environments					</a>
+					</li>
+				
+					<li>		
+					<a href="/aroundtheweb/mobility/doctors-prescribing-phones-apps-to-manag/6c38714663747655524f7050717337335566706e51413d3d?cid=SBX_iwk_related_sociative_Wireless_security_mobility&itc=SBX_iwk_related_sociative_Wireless_security_mobility">
+					Doctors prescribing phones apps to manage health problems					</a>
+					</li>
+				
+					<li>		
+					<a href="/aroundtheweb/mobility/mobile-design-its-user-experience-stupid/5073664e515441512f4c3167446e6d325835415567773d3d?cid=SBX_iwk_related_sociative_Wireless_security_mobility&itc=SBX_iwk_related_sociative_Wireless_security_mobility">
+					Mobile design: It's user experience, stupid, and here are 4 ways it fails					</a>
+					</li>
+				
+					<li>		
+					<a href="/aroundtheweb/mobility/what-you-need-to-know-about-the-governme/76506d687453624c61375345513552537134573952413d3d?cid=SBX_iwk_related_sociative_Wireless_security_mobility&itc=SBX_iwk_related_sociative_Wireless_security_mobility">
+					What you need to know about the government's fight to unlock your cellphone					</a>
+					</li>
+						
+</ul>
+	<a class="continue" href="/aroundtheweb/mobility/topics" title="mobility from Around the Web">More On the Web<span>&raquo;</span></a>
+        </div>
+    </div>
+    <div class="related-resources tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-video" title="Video">Video</a></li>
+            <li><a href="#toc-slideshow" title="Slideshow">Slideshow</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-video">Video</a></h3>
+			<!--cahe Keyhash : view_video_taxonomy_224309_relatedbox_count_4_startat_0--><!--cahe Keyhash : cbbb730fd83cef0befe89c39ead233cb-->    <ul class="events">
+<li><a class="contentgating_article"  href="/security/mobile/securevoice-encrypts-mobile-voip-communi/232601831?cid=SBX_iwk_related_video_Wireless_security_mobility&itc=SBX_iwk_related_video_Wireless_security_mobility" title="SecureVoice Encrypts Mobile VoIP Communications">SecureVoice Encrypts Mobile VoIP Communications</a></li><a class="continue" href="/archives/video/224309?cid=SBX_iwk_related_video_Wireless_security_mobility&itc=SBX_iwk_related_video_Wireless_security_mobility" title="More Videos">More Videos<span>&raquo;</span></a>                        
+    </ul>        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-slideshow">Slideshow</a></h3>
+			<!--cahe Keyhash : view_slideshows_taxonomy_224309_relatedbox_count_4_startat_0--><!--cahe Keyhash : f71d17e1afe6e99a11d9385abeca0812-->    <ul class="events">
+<li><a class="contentgating_article"  href="/security/management/9-security-technologies-for-super-bowl-a/232600174?cid=SBX_iwk_related_slideshow_Wireless_security_mobility&itc=SBX_iwk_related_slideshow_Wireless_security_mobility" title="9 Security Technologies For Super Bowl And Beyond">9 Security Technologies For Super Bowl And Beyond</a></li><li><a class="contentgating_article"  href="/healthcare/security-privacy/7-tools-to-tighten-healthcare-data-secur/232500404?cid=SBX_iwk_related_slideshow_Wireless_security_mobility&itc=SBX_iwk_related_slideshow_Wireless_security_mobility" title="7 Tools To Tighten Healthcare Data Security">7 Tools To Tighten Healthcare Data Security</a></li><li><a class="contentgating_article"  href="/government/mobile/10-cool-ipad-apps-from-uncle-sam/232300178?cid=SBX_iwk_related_slideshow_Wireless_security_mobility&itc=SBX_iwk_related_slideshow_Wireless_security_mobility" title="10 Cool iPad Apps From Uncle Sam">10 Cool iPad Apps From Uncle Sam</a></li><li><a class="contentgating_article"  href="/security/reviews/blackberry-protect-slideshow-mobile-data/225702853?cid=SBX_iwk_related_slideshow_Wireless_security_mobility&itc=SBX_iwk_related_slideshow_Wireless_security_mobility" title="BlackBerry Protect Slideshow: Mobile Data Safety for the Masses">BlackBerry Protect Slideshow: Mobile Data Safety for the Masses</a></li><a class="continue" href="/galleries?cid=SBX_iwk_related_slideshow_Wireless_security_mobility&itc=SBX_iwk_related_slideshow_Wireless_security_mobility" title="More Slideshows">More Slideshows<span>&raquo;</span></a>                        
+    </ul>        </div>
+    </div>
+    <hr style="margin-bottom:10px;"/>
+<!-- /  Related Reading Box -->
+
+<!--  Commenting -->
+<div class="articleDiscussion">
+	<h3>Informationweek Discussions</h3>
+	<h5>Start the Discussion</h5>
+</div>
+<div id="mc_jive">
+	
+			<div id="disqus-hints-box">
+  <script type="text/javascript">
+	var brainyardDomain  = 'www.informationweek.com';
+</script>
+<script>
+	$(document).ready(function(){
+		$(".commentingPolicy").colorbox({width:"420px",height:"300px",inline:true,href:"#inlineCommenting"});//end .htmlTags
+	});
+</script>	
+<div style='display:none' align="left">
+	<div id='inlineModal' style='padding:10px;' align="left">
+    <div class="newsletterHeader"><img src="http://twimgs.com/informationweek/Disqus_art/IW_logo_disqus_popbox.jpg" /></div>
+    <br /><br /> 
+    <div class="markdown">
+    
+    </div>  
+</div><!-- /end  inline_mailinglist-->
+<!--  Commenting Policy contents -->
+	<div id='inlineCommenting' style='padding:10px;text-align: justify;' class="markdown">
+		<p>InformationWeek encourages readers to engage in spirited, healthy debate, 
+		including taking us to task.  However, InformationWeek moderates all comments posted to our site, 
+		and reserves the right to modify or remove any content that it determines to be derogatory, offensive, 
+		inflammatory, vulgar, irrelevant/off-topic, racist or obvious marketing/SPAM.  
+		InformationWeek further reserves the right to disable the profile of any commenter participating in 
+		said activities.</p>
+	</div>
+</div>
+<table cellspacing="0" cellpadding="0" border="0" width="626px" bgcolor="#f3f3f3">
+	<tr>
+    	<td width="34"><img src="http://twimgs.com/informationweek/Disqus_art/hintbox_info.jpg" alt="Disqus Tips" border="0" align="left" height="34"></td> 
+		<td>
+			<font style="font-family: Arial, Helvetica, Geneva, SunSans-Regular, sans-serif; color: #000000; font-size: 11px;">
+				<strong>To upload an avatar photo,</strong> first <a href="http://disqus.com/dashboard/" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;" target="_blank">complete your Disqus profile.</a> | <a href="#" class="htmlTags" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;">View the list</a> of <strong>supported HTML tags</strong> you can use to style comments. | Please read our <a href="#" class="commentingPolicy" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;"><strong>commenting policy.</strong></a>
+			</font>
+		</td>
+	</tr>
+	</table></div>
+<div id="mythread">
+</div>
+
+<script language='JavaScript' type='text/javascript'>
+<!--
+var jmessage = '';
+var jtimestamp = '';
+var jhmac = '';
+var jmessage = '';
+var isLoggedIn = '';
+$.ajax({
+   type: "GET",
+   url: "/disqussetting",
+   data: "referer="+encodeURIComponent(window.location.href),
+   success: function(data){		   
+	   if (data != null)
+		{
+		   jmessage = data.jmessage;
+		   jtimestamp = data.jtimestamp;
+		   jhmac = data.jhmac;
+		   isLoggedIn = data.isLoggedIn;
+		   if(!isLoggedIn) // do only if he is not logged in
+		   {
+			   $('#mythread').load('/disqus/showcomments/format/html', {'success':encodeURIComponent(window.location.href),
+				   'articleId': '240154955',
+				   'assetId': '157322',
+				   'actionType' : '' });
+		   }					
+		}
+   },
+   dataType: "json",
+   async: false,
+   cache: false
+ }	
+ );	
+
+
+				if(jhmac == null || jhmac == ''){
+				var headID = document.getElementsByTagName("head")[0];         
+				var cssNode = document.createElement('link');
+				cssNode.type = 'text/css';
+				cssNode.rel = 'stylesheet';
+				cssNode.href = 'http://i.techweb.com/brainyard/css/disqusLoggedOff.css';
+				cssNode.media = 'screen';
+				headID.appendChild(cssNode);
+			}
+			else
+			{
+								document.write("<style type=\"text/css\">#techwebCommentLogin{display:none;}</style>");
+
+			}
+	 
+             if(jhmac == null || jhmac == ''){
+
+                     var headID = document.getElementsByTagName("head")[0];
+
+                     var cssNode = document.createElement('link');
+
+                     cssNode.type = 'text/css';
+
+                     cssNode.rel = 'stylesheet';
+
+                     cssNode.href = 'http://i.techweb.com/brainyard/css/disqusLoggedOff.css';
+
+                     cssNode.media = 'screen';
+
+                     headID.appendChild(cssNode);
+
+             }
+
+             else
+
+             {
+
+                     
+                     document.write("<style type=\"text/css\">#techwebCommentLogin{display:none;}</style>");
+
+
+
+             }
+
+-->
+ 
+</script>
+<script type="text/javascript">
+  if (jmessage == null)
+        $("div#disqus-hints-box").hide();
+</script>
+<script type="text/javascript">
+var disqus_config = function () {
+
+	var hmac1 = jhmac;
+	var htimestamp = jtimestamp;
+	var hmessage = jmessage;	
+	if(hmac1 != null){		
+			this.page.remote_auth_s3 = hmessage + ' ' + hmac1 + ' ' + htimestamp;
+			this.page.api_key = "PZCFWiOQHimfoBuGrfHW2puPbtIC2kW5N1ep3fCBt9A9fIQWRLfAfWI21yUe1S9m";			
+	}
+			
+    this.sso = {
+          name:    "UBM TechWeb",
+          button:  "http://i.techweb.com/informationweek/images/ubm-techweb-logo.gif",
+          icon:    "http://i.cmpnet.com/brainyard/images/favicon.ico",
+          url:     "javascript:NextGen.disqusCommentForm('http://www.informationweek.com/login?assetId=157322&k=2LGCMTIW&successfulLoginRedirect=');",
+          logout:  "http://www.informationweek.com/logout?redirect=http%3A%2F%2Fwww.informationweek.com%2Fmobility%2Fsecurity%2Fvmware-fights-android-byod-headaches%2F240154955",
+          width:   "800",
+          height:  "400"
+    };
+
+    this.callbacks.onNewComment = [function() {trackComment();}];
+};
+</script>
+
+<style type="text/css">
+.dsq-post-tools .dsq-post-as .dsq-button{
+	background: url(none);
+	background-color:#c90000;
+}
+
+.dsq-post-tools .dsq-post-as .dsq-button:active{
+	background: url(none);
+	background-color:#ed0404;
+}
+
+.dsq-post-tools .dsq-post-as .dsq-button:hover{
+	background: url(none);
+	background-color:#e00000;
+}
+.dsq-post-tools .dsq-post-as .dsq-button{
+text-shadow:none;
+color:white;
+}
+.dsq-comment-text blockquote{
+	border-left:1px solid #555555;
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-style:italic;
+	font-size:15px;
+	margin:15px;
+	color:#999999;
+	margin-bottom:10px;
+	padding-right:15px;
+	font-weight:bold;
+}
+#dsq-content .dsq-comment-meta li, #dsq-content .dsq-comment-actions li {
+    float: left;
+    font-size: 65%;
+    margin: 0 10px 0 0;
+}
+
+#dsq-content #dsq-footer li {
+    float: left;
+    font-size: 0.75em;
+    margin: 0 10px 0 0;
+}
+
+#dsq-content .dsq-comment-text {
+    display: inline;
+    font-size: .80em;
+}
+</style>
+
+<a name="comments"></a>
+<div id="disqus_thread">
+		
+</div>
+
+<script type="text/javascript">
+
+if(isLoggedIn) {
+		
+    var disqus_shortname = 'iwk';
+    var disqus_domain = 'disqus.com';
+    var disqus_identifier = 'article_240154955';
+	var disqus_url = 'http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955';
+		var disqus_title = '"VMware Fights Android BYOD Headaches"';
+		if(disqus_identifier !== null && disqus_identifier != '')
+{
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+	}
+}
+    
+</script>
+							
+</div> 
+<!-- /  Commenting -->
+</div>
+<center>
+<a href="/rss/all"><img style="padding-right: 4px;" src="http://i.cmpnet.com/techweb/xml.gif"> Subscribe to RSS</a><br><br>
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1256092/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_IMU3_300x250_or_336x280;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1256092/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_IMU3_300x250_or_336x280;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1256092/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_IMU3_300x250_or_336x280;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</center>
+<h2>Resource Links</h2>
+<ul class="resources">
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200309/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_1_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200309/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_1_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200309/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_1_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1201178/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_2_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1201178/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_2_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1201178/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_2_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1201087/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_3_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1201087/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_3_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1201087/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_3_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1201129/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_4_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1201129/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_4_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1201129/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_4_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200026/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_5_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200026/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_5_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200026/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_5_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249703/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_6_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249703/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_6_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249703/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_6_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1250049/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_7_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1250049/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_7_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1250049/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_7_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249881/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_8_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249881/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_8_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249881/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_8_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249958/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_9_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249958/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_9_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249958/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_9_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249838/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_10_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249838/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_10_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249838/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Marketplace_link_10_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+</ul>
+<br>
+
+
+<p>
+<br>
+</p>
+</div></div>
+<div class="secondary-content yui-b">
+
+<!-- newsletter promo -->
+ 
+<div id="newsletterPromo">	     
+ <h2 class="first"><span>Get InformationWeek Daily</span></h2>
+ <div class="resources">
+ 
+ <p>Don't miss each day's hottest technology news, sent directly to your inbox, including occasional breaking news alerts.</p>
+
+<div>
+  <a class="htmlTags subscribe1 button" href="#" title="Subscribe" onClick="var s=s_gi('cmpinformationweekcom'); s.evar26='InformationWeek Newsletter Subscription Short Promo Form'; s.products=';InformationWeek Newsletter Subscription;;'; s.events='event6'; s.tl(this,'o','InformationWeek Newsletter Subscription Subscribe Click');" id="subscribeNow">Subscribe Now</a> 
+</div>
+
+ </div>
+</div>      
+
+<script type="text/javascript" src="http://twimgs.com/brainyard/js/newsletter.js"></script>
+
+<link rel="stylesheet" href="http://twimgs.com/brainyard/css/newsletter.css" media="all" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/css/footer.css"/>
+
+<link media="screen" rel="stylesheet" href="http://twimgs.com/infoweek/iwk_refresh/css/colorbox.css" type="text/css" />
+<link rel="stylesheet" href="http://twimgs.com/informationweek/newsletter_art/subscription_pages/newsletterPromoPopupForm.css" media="all" type="text/css" />
+<script type="text/javascript" src="http://twimgs.com/informationweek/js/jsoncall/newsletterpromo.js"></script>
+<script type="text/javascript">
+	var brainyardDomain  = 'www.informationweek.com';
+</script>
+<script>
+	$(document).ready(function(){
+		$("#subscribeNow").colorbox({width:"620px",height:"600px",inline:true,href:"#inlineModalNews"});//end .htmlTags
+	});
+</script>
+<div style='display:none'>
+<div id='inlineModalNews' style='padding:10px;'> 
+ 		<!--  Starts here -->
+ 		
+<div id='inline_mailinglist' style='padding:10px;'>
+<div id="newsletterHeader"><img src="http://twimgs.com/informationweek/newsletter_art/subscription_pages/NL_popup_daily_logo.gif" /></div>
+<div id='inline_mailinglist_body'>
+<h3>Sign up for the InformationWeek Daily email newsletter</h3>
+<div id="process_class"></div>
+<div id="mailingList">
+	<div id="mailingListTop"></div>
+	<div id="mailingListBody">
+	<form name="quickMailingList" id="quickMailingList" onsubmit="return false;" >
+    <input type="hidden" name="cid" id="cid" value="iwk_newsletter_lightbox"> 
+	<table class="formtable" id="mainnameaddress" cellspacing="0">
+			<tr class="formrow required">
+				<td class="label"><label for="First Name">First Name*:</label></td>
+				<td class="input"><input type="text" name="firstname" id="firstname" size="30" maxlength="20" value="" /></td>
+			</tr>
+			<tr class="formrow required">
+				<td class="label"><label for="Last Name">Last Name*:</label></td>
+				<td class="input"><input type="text" name="lastname" id="lastname" size="30" maxlength="25" value="" /></td>
+		   <tr class="formrow required">
+
+				<td class="label"><label for="EMAIL">Email Address*: </label></td>
+				<td class="input"><input name="email" id="email" type="text" size="30" maxlength="50" /></td>
+			</tr>
+			<tr class="formrow">
+				<td class="label"><label for="Job Title">Job Title:</label></td>
+				<td class="input"><input type="text" name="jobtitle" id="jobtitle" size="30" maxlength="50" value="" /></td>
+			</tr>
+			<tr class="formrow">
+
+				<td class="label"><label for="Employees in Organization">Company/Organization/Gov't Dept.:</label></td>
+				<td class="input"><input type="text" name="employeesinorganization" id="employeesinorganization" size="30" maxlength="50" value="" /></td>
+			</tr>
+			
+			<tr>
+				<td class="label required hint">
+					*Required field
+				</td>
+				<td  align="right">
+					<input type="image" src="http://twimgs.com/infoweek/iwk_refresh/button-subscribe-input.png" onClick="frmcheck();" value="subscribe" />					
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="label">
+				<p class="fineText">
+				<a href="http://legal.us.ubm.com/privacy-notice-highlights/" target="_blank">Privacy Statement</a>
+				</p>            	
+				</td>
+			</tr>
+	</table>
+    </form> 
+	</div>
+	<div id="mailingListBottom"></div>
+</div><!-- /end  mailingList--> 
+</div><!-- /end  inline_mailinglist_body-->
+</div>
+ 		
+ 	</div>	
+</div><!-- Follow InformationWeek -->
+<div class="resources_v2 follow">
+  <h3><span>Follow InformationWeek</span></h3>
+  <div class="inner clearfix">
+    <a class="social-button social-fb first" href="http://www.facebook.com/informationweek" title="Facebook">Facebook</a>
+    <a class="social-button social-tw" href="https://twitter.com/InformationWeek" title="Twitter">Twitter</a>
+    <a class="social-button social-gp" href="https://plus.google.com/108720492902396433722" title="Google Plus">Google Plus</a>
+    <a class="social-button social-li" href="http://www.linkedin.com/today/informationweek.com" title="LinkedIn">LinkedIn</a>
+    <a class="social-button social-rss" href="http://www.informationweek.com/rss" title="RSS">RSS</a>
+    <a class="social-button social-email" href="mailto:editors@informationweek.com" title="Email">Email</a>
+  </div>
+</div>
+<!-- / Follow InformationWeek -->
+    
+    <div>
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/2296942/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Modal_336x70;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/2296942/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Modal_336x70;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/2296942/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Modal_336x70;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</div>    
+    <div class="align-center padded">    	
+		<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1199253/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_IMU1_300x250_or_336x280;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1199253/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_IMU1_300x250_or_336x280;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1199253/0/0/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_IMU1_300x250_or_336x280;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+	</div>
+	<br/><br/>
+	<!-- Upcoming Events -->
+
+      
+<h2><span>Upcoming Events</span></h2>
+<style>
+.resources ul.toc li a {    
+    width: 167px;
+}
+</style>
+<div class="resources tabs">
+    <div class="tabbed" id="t0">
+         <ul class="toc clearfix">
+             <li class="first current"><a title="Live Events" href="#toc-live-events">Live Events</a><div class="arrow"></div></li>
+             <li ><a title="WebCasts" href="#toc-webcasts">WebCasts</a><div class="arrow"></div></li>
+              
+         </ul>
+         <!-- Events -->
+         <div class="tab-content clearfix" style="display: block;">
+             <h3 class="tab" style="display: none;"><a name="toc-live-events">Live Events</a></h3>
+             <!-- Taxonomy ID:224309 --><!--cahe Keyhash : view_session_taxonomy_224309_upcomingevents_count_5_startat_0--><!--cahe Keyhash : 22f6096b5fa3b902bfd7e005ad188c96-->		 
+     	  <ul class="events">
+
+                
+
+                     <li><a href="http://www.mcommworld.com/sanfrancisco/conference/security-privacy-for-mobile-commerce.php?sourceCode=MP_BTMSBX&cid=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&itc=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&_mc=MP_BTMSBXIWKFT" target="_blank">Secure your mobile applications in the new commerce era - Mobile Commerce World<span class="eventName" > - Mobile Commerce World</span></a>
+	                 </li>     
+
+                           
+
+                     <li><a href="http://www.mcommworld.com/sanfrancisco/conference/the-technology-of-mobile-payments-and-wallets.php?sourceCode=MP_BTMSBX&cid=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&itc=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&_mc=MP_BTMSBXIWKFT" target="_blank">Delve into technologies and business issues around mobile payments and wallets - Mobile Commerce World<span class="eventName" > - Mobile Commerce World</span></a>
+	                 </li>     
+
+                           
+
+                     <li><a href="http://www.mcommworld.com/sanfrancisco/conference/strategies-for-mobile-marketers.php?sourceCode=MP_BTMSBX&cid=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&itc=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&_mc=MP_BTMSBXIWKFT" target="_blank">Explore best practices for marketers in the new mobile world - Mobile Commerce World<span class="eventName" > - Mobile Commerce World</span></a>
+	                 </li>     
+
+                           
+
+                     <li><a href="http://www.telcovisiononline.com/lasvegas/?cid=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&itc=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&_mc=MP_BTMSBXIWKFT" target="_blank">Learn how to move your broadband service to an All-IP network at TelcoVision (formerly TelcoTV)<span class="eventName" > - TelcoVision</span></a>
+	                 </li>     
+
+                           
+
+                     <li><a href="http://www.mcommworld.com/sanfrancisco/conference/mobile-commerce-technology-integration.php?sourceCode=MP_BTMSBX&cid=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&itc=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&_mc=MP_BTMSBXIWKFT" target="_blank">Learn how to best integrate mobile commerce with your current systems -- Mobile Commerce World<span class="eventName" > - Mobile Commerce World</span></a>
+	                 </li>     
+
+           <br>
+	<div class="sbarchive_bottomleft"><a	href="/live-event/mobility/more.html?cid=SBX_iwk_fture_LiveEvent_Wireless_security_mobility&itc=SBX_iwk_fture_LiveEvent_Wireless_security_mobility"	class="continue">More Live Events<span>>></span></a></div>
+</ul>
+  
+ 
+         
+         </div>    
+
+
+         <!-- Webcast -->
+         <div class="tab-content clearfix" style="display: none;">
+       		 <ul class="events">		
+                 <!-- Taxonomy ID:224309 --><!--cahe Keyhash : view_webcast_taxonomy_224309_upcomingevents_count_5_startat_0--><!--cahe Keyhash : c7b3b1c6b4014b65bd59435bb7537c92-->		 
+     <!-- Taxonomy ID:224309 -->                        	<li><!--Rule 4 --><a target="_new" href="https://webinar.informationweek.com/Novell20130620?keycode=SBX&cid=SBX_iwk_fture_Webcast_Wireless_security_mobility&itc=SBX_iwk_fture_Webcast_Wireless_security_mobility&K=SBX_IWK_FT">Putting the Mobile Employee to Work</a><br>                        	
+                            </li>
+                                                	<li><!--Rule 4 --><a target="_new" href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1005928&cid=SBX_iwk_fture_Webcast_Wireless_security_mobility&itc=SBX_iwk_fture_Webcast_Wireless_security_mobility&K=SBX_IWK_FT">Agile Mobile Development - faster response time to feedback</a><br>                        	
+                            </li>
+                                                	<li><!--Rule 4 --><a target="_new" href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1005376&cid=SBX_iwk_fture_Webcast_Wireless_security_mobility&itc=SBX_iwk_fture_Webcast_Wireless_security_mobility&K=SBX_IWK_FT">Quick Tips for Managing Mobile Users</a><br>                        	
+                            </li>
+                                                	<li><!--Rule 5 --><a target="_new" href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1005652&cid=SBX_iwk_fture_Webcast_Wireless_security_mobility&itc=SBX_iwk_fture_Webcast_Wireless_security_mobility&K=SBX_IWK_FT">Protecting Enterprise Data From Endpoint Threats</a><br>                        	
+                            </li>
+                                                	<li><!--Rule 5 --><a target="_new" href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1005449&cid=SBX_iwk_fture_Webcast_Wireless_security_mobility&itc=SBX_iwk_fture_Webcast_Wireless_security_mobility&K=SBX_IWK_FT">Manage and Secure BYOD while Achieving Data Separation? You can do it!</a><br>                        	
+                            </li>
+                          <br>  <br>
+  
+		   
+		              			<a href="/webcast/mobility/more.html?cid=SBX_iwk_fture_Webcast_Wireless_security_mobility&itc=SBX_iwk_fture_Webcast_Wireless_security_mobility" class="continue">More Webcasts<span>>></span></a>
+     	   
+ <!-- Render Assets of CurationType 'Webcast' -->                 
+           	 </ul>
+         </div>
+         <!-- Virtual event -->
+                       
+    </div>
+</div>
+
+<!-- Upcoming Events -->
+	
+	<!-- Green Issue -->
+<h2><span>This Week's Issue</span></h2>
+
+    <div class="issue resources clearfix">
+
+	   <div class="cover">
+		  <a href="http://www.informationweek.com/gogreen/052713?k=iwka&cid=onedit_ds_iwka"><img src="http://twimgs.com/informationweek/1367/smallcov.jpg" alt="This Week's Issue" title="This Week's Issue" width="110" height="110" border="0"/></a><!-- cover WAS width="125" height="169" ... -->
+
+		  <div class="caption"><a href="/maindocs/archive.htm" title="Title">Back Issues</a></div>
+		  <div class="caption"><a href="/mustreads-trends/archive" title="Title">Must Reads &<BR>IT Trends</a></div>
+	   </div>
+	   
+	   <ul class="assets">
+	   <li><a href="https://www.informationweeksubscriptions.com/ars/gettemplate.do?mode=gettemplate&P=1&F=1003917&K=WBSBA&cid=subpgnb_sub_WBSBA" target="_blank" title="Subscribe to Digital">Subscribe to InformationWeek</a></li>
+	    
+	    
+	   <li><a href="http://www.informationweek.com/gogreen/052713?k=iwka&cid=onedit_ds_iwka" title="Title">Subscribe to Digital</a></li>
+	    
+	   <li><a href="http://www.informationweek.com/security/management/2013-strategic-security-survey/240155501" title="Read The Cover Story" target="_blank">Read the Cover Story</a></li>
+	   <li><a href="http://www.informationweek.com/gogreen/052713?k=iwka&cid=onedit_ds_iwka" title="Download This Issue" target="_blank">Download This Issue</a></li>
+	   </ul>			 
+	   
+	   <a style="width:114px !important" class="subscribe button" href="https://www.informationweeksubscriptions.com/ars/gettemplate.do?mode=gettemplate&P=1&F=1003917&K=WBTWB&cid=subpgnb_sub_WBTWB" target="_blank" title="Subscribe Now">Subscribe Now</a>
+    </div>
+
+<!-- / Green Issue -->
+
+			<!-- Technology Whitepapers displays Smart Box Content -->
+<h2  class="first"><span>Featured  Whitepapers</span></h2>
+	<div class="sbarchive_background">&nbsp;
+		<div class="sbarchive_left">&nbsp;</div>
+		<div  class="sbarchive_right"><a title="UBM Smart boxes auto deliver premium content that is contextually relevant to the article or site section where it is located" href="#">What's this?</a></div>
+	</div>
+<div class="resources clearfix">	
+	<ul class="assets">
+	<!-- Taxonomy ID:224309 --><!--cahe Keyhash : view_whitepaper_taxonomy_224309_smartbox_count_5_startat_0--><!--cahe Keyhash : a967ec6e411193358ca57f9f7d370f2a-->		 
+     <!-- Taxonomy ID:224309 -->  
+<ul class="archive">
+				
+				<li><!--Rule 3 -->		
+					<a href="http://www.informationweek.com/whitepaper/Mobility/Wireless-Security/application-control-at-the-wireless-edge-wp1368633482?articleID=191738554&cid=SBX_iwk_fture_wp_Wireless_security_mobility&itc=SBX_iwk_fture_wp_Wireless_security_mobility" name="SBX_iwk_fture_wp_Wireless_security_mobility">
+				Ensure Your Wireless Networks Performance &#8211; Even Under Heavy Load				</a>
+								</li>
+				
+				<li><!--Rule 3 -->		
+					<a href="http://www.darkreading.com/blog/sophoslabs-insights/util/9949/download.html?cid=SBX_iwk_fture_wp_Wireless_security_mobility&itc=SBX_iwk_fture_wp_Wireless_security_mobility" name="SBX_iwk_fture_wp_Wireless_security_mobility">
+				Mobile Device Management Buyers Guide				</a>
+								</li>
+				
+				<li><!--Rule 3 -->		
+					<a href="http://www.darkreading.com/blog/sophoslabs-insights/util/10717/download.html?cid=SBX_iwk_fture_wp_Wireless_security_mobility&itc=SBX_iwk_fture_wp_Wireless_security_mobility" name="SBX_iwk_fture_wp_Wireless_security_mobility">
+				Mobile Device Security: What's Coming Next?				</a>
+								</li>
+				
+				<li><!--Rule 3 -->		
+					<a href="http://www.darkreading.com/blog/sophoslabs-insights/util/10716/download.html?cid=SBX_iwk_fture_wp_Wireless_security_mobility&itc=SBX_iwk_fture_wp_Wireless_security_mobility" name="SBX_iwk_fture_wp_Wireless_security_mobility">
+				Ransomware: Hijacking Your Data				</a>
+								</li>
+				
+				<li><!--Rule 4 -->		
+					<a href=""http://www.informationweek.com/whitepaper/Mobility/Mobile-Business/best-practice-policies-for-mobile-device-managemen-wp1367867927?articleID=191738513 "&cid=SBX_iwk_fture_wp_Wireless_security_mobility&itc=SBX_iwk_fture_wp_Wireless_security_mobility" name="SBX_iwk_fture_wp_Wireless_security_mobility">
+				Best Practice Policies for Mobile Device Management				</a>
+								</li>
+						
+</ul>
+	</ul>
+		<div class="sbarchive_bottom">	
+<div class="sbarchive_left"><a href="/whitepaper/mobility/more.html?cid=SBX_iwk_fture_wp_Wireless_security_mobility&itc=SBX_iwk_fture_wp_Wireless_security_mobility">More &raquo;</a></div>
+<div class="sbarchive_right"><img src="http://twimgs.com/informationweek/smartbox/images/smartbox.PNG"></div>
+</div></div>
+			
+	<h2><span>Featured eBooks</span></h2>
+<div class="resources">
+<strong>Complimentary Dummies Books</strong><br />
+  <img src="http://twimgs.com/custom/data-center-availability/images/it-availability.jpg" width="40" style="float:left; margin:5px 10px 20px 0;">
+  <div style="margin-top:5px; margin-left:50px;">
+    <ul class="assets">
+	 <li> <a href="http://data-center-availability.techweb.com/download/assetId/2454/it-availability--performance-monitoring-for-dummiesreg?cid=fture_bc__mobile" target="_blank">IT Availability & Performance Monitoring</a></li>
+	 <li> <a href="http://www.informationweek.com/whitepaper/Business-Intelligence/Content-Management/data-deduplication-for-dummies-wp1337802888?articleID=191704894&cid=fture_wp__mobile" target="_blank">Data Deduplication</a></li>
+	 <li> <a href="http://www.informationweek.com/whitepaper/Software/Server-Virtualization/vm-data-protection-for-dummies-wp1337802689?articleID=191704893&cid=fture_wp__mobile" target="_blank">VM Data Protection</a></li>
+	
+	 <li> <a href="http://www.businessagility.com/lg_redirect.asp?piddl_lgid_docid=235106&piddl_lg_pcode=wprightcolumn&cid=fture_wp__mobile" target="_blank">Private cloud</a></li>
+   <li> <a href="http://www.applicationlifecycle.techweb.com/download/assetId/2732/systems-engineering-for-dummies?cid=fture_wp__internet" target="_blank">Systems Engineering for Dummies</a></li> </ul>
+  </div>
+</div>
+			<h2 class="first"><span>Featured Reports</span></h2>
+	<div class="sbarchive_background">&nbsp;
+		<div class="sbarchive_left">&nbsp;</div>
+		<div class="sbarchive_right"><a title="UBM Smart boxes auto deliver premium content that is contextually relevant to the article or site section where it is located" href="#">What's this?</a></div>
+	</div> 
+<div class="resources clearfix">	
+	<ul class="assets">
+			<!-- Taxonomy ID:224309 --><!--cahe Keyhash : view_analytics_taxonomy_224309_smartbox_count_5_startat_0--><!--cahe Keyhash : d9379f9521c1cc1b9bbe4812fb999fe2-->		 
+     <!-- Taxonomy ID:224309 -->  
+<ul class="archive">
+				
+				<li><!--Rule 7 -->		
+					<a href="http://reports.informationweek.com/abstract/18/8745/Mobility-Wireless/informed-cio-is-your-it-infrastructure-ready-for-mobility*.html?cid=SBX_iwk_fture_Analytics_Wireless_security_mobility&itc=SBX_iwk_fture_Analytics_Wireless_security_mobility" name="SBX_iwk_fture_Analytics_Wireless_security_mobility">
+				Informed CIO: Is Your IT Infrastructure Ready for Mobility?				</a>
+								</li>
+				
+				<li><!--Rule 7 -->		
+					<a href="http://reports.informationweek.com/abstract/18/8711/Mobility-Wireless/fundamentals-the-mobile-payment-frontier.html?cid=SBX_iwk_fture_Analytics_Wireless_security_mobility&itc=SBX_iwk_fture_Analytics_Wireless_security_mobility" name="SBX_iwk_fture_Analytics_Wireless_security_mobility">
+				Fundamentals: The Mobile Payment Frontier				</a>
+								</li>
+				
+				<li><!--Rule 7 -->		
+					<a href="http://reports.informationweek.com/abstract/18/8643/Mobility-Wireless/informed-cio-striking-a-security-usability-balance.html?cid=SBX_iwk_fture_Analytics_Wireless_security_mobility&itc=SBX_iwk_fture_Analytics_Wireless_security_mobility" name="SBX_iwk_fture_Analytics_Wireless_security_mobility">
+				Informed CIO: Striking a Security/Usability Balance				</a>
+								</li>
+				
+				<li><!--Rule 7 -->		
+					<a href="http://reports.informationweek.com/abstract/18/8623/Mobility-Wireless/strategy-optimize-your-mobile-infrastructure.html?cid=SBX_iwk_fture_Analytics_Wireless_security_mobility&itc=SBX_iwk_fture_Analytics_Wireless_security_mobility" name="SBX_iwk_fture_Analytics_Wireless_security_mobility">
+				Strategy: Optimize Your Mobile Infrastructure				</a>
+								</li>
+				
+				<li><!--Rule 8 -->		
+					<a href="http://reports.informationweek.com/abstract/18/7935/Mobility-Wireless/strategy-mobility-s-next-challenge.html?cid=SBX_iwk_fture_Analytics_Wireless_security_mobility&itc=SBX_iwk_fture_Analytics_Wireless_security_mobility" name="SBX_iwk_fture_Analytics_Wireless_security_mobility">
+				Mobility&#8217;s Next Challenge: 8 Steps to a Secure Environment				</a>
+								</li>
+						
+</ul>
+	
+	</ul>
+	<div class="sbarchive_bottom">
+
+	
+	<div class="sbarchive_left"><a href="http://reports.informationweek.com/?cid=SBX_iwk_fture_Analytics_Wireless_security_mobility&itc=SBX_iwk_fture_Analytics_Wireless_security_mobility">More &raquo;</a></div>
+	<div class="sbarchive_right"><img src="http://twimgs.com/informationweek/smartbox/images/smartbox.PNG"></div>	
+</div></div>
+		<!-- <script language="Javascript" src="http://www.enterpriseefficiency.com/e2_radio_ad_js.asp"></script>  -->
+
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1257924/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Promo1_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1257924/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Promo1_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1257924/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Promo1_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+
+
+<BR><BR>
+
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1257925/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Promo2_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1257925/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Promo2_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1257925/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Promo2_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+
+<br clear="all" />
+	<br/><br/>
+	<h2 class="resources"><span>Video</span></h2>
+<div id="xc">
+<div id="xc2">
+<div class="box video">
+				
+<div class="box_wrap"><div class="box_third">				<a href="/video/mastermix/2149376119001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2158015063001_961896998-145-1360626369763.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2149376119001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Bob Metcalfe Plans Ethernet's 40th</a><br>
+			</div>
+	<div class="box_third">				<a href="/video/mastermix/2101524019001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2101775875001_961896998-142-1358475580643.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2101524019001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>CES 2013: It's A Wrap!</a><br>
+			</div>
+	<div class="last_float_third">				<a href="/video/mastermix/2099170882001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2099103116001_961896998-10819-1358387600321.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2099170882001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Intel touts tablets, smartphones at CES  ...</a><br>
+			</div>
+	</div><div class="box_wrap" style="display: none;"><div class="box_third">				<a href="/video/mastermix/2099176886001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2099103147001_961896998-142-1358390976500.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2099176886001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Intel shows off eye tracking and gesture ...</a><br>
+			</div>
+	<div class="box_third">				<a href="/video/mastermix/2099115385001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2099103108001_961896998-185-1358386319518.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2099115385001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>QNX hacks a Bentley</a><br>
+			</div>
+	<div class="last_float_third">				<a href="/video/mastermix/2099120084001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2099103101001_961896998-10839-1358383575240.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2099120084001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>CES; the car show</a><br>
+			</div>
+	</div><div class="box_wrap" style="display: none;"><div class="box_third">				<a href="/video/mastermix/2096610172001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2096608324001_961896998-178-1358297161542.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2096610172001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Atmel talks touch enabled curves and Int ...</a><br>
+			</div>
+	<div class="box_third">				<a href="/video/mastermix/2091970494001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2091770257001_961896998-160-1358116260568.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2091970494001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>CES; Synaptics senses mobile touch poten ...</a><br>
+			</div>
+	<div class="last_float_third">				<a href="/video/mastermix/2091877919001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/e1/pd/1568176135/1568176135_2091770233001_961896998-161-1358112360006.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/2091877919001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>CES: Maxim shows heart, turns up volume  ...</a><br>
+			</div>
+	</div>
+				
+  <div class="slide_controls"><a href="/video/"><strong>View All Videos</strong></a>
+    <div class="controls"><a href="#" class="slide_left"><span>Previous Page</span></a>
+    <img src="http://twimgs.com/informationweek/images/slide_dot_red.jpg"
+	    alt="First Page" /> <img
+	    src="http://twimgs.com/informationweek/images/slide_dot_gray.jpg"
+	    alt="Second Page" /> <img
+	    src="http://twimgs.com/informationweek/images/slide_dot_gray.jpg"
+	    alt="Third Page" /> <a href="#" class="slide_right"><span>Next Page</span></a>
+    </div>
+  </div>
+</div><!-- END: box video -->
+</div><!-- END: xc2 -->
+</div><!-- END: xc -->
+
+
+</div>	</div>
+</div>
+
+
+<footer>
+
+
+<!-- ========== -->
+<!-- = FOOTER = -->
+<!-- ========== -->
+
+<!-- research tag -->
+<script src="http://content.dl-rms.com/rms/mother/564/nodetag.js"></script>
+
+<!-- AD tag -->
+
+<div id="footer">
+		<div id="footer-ad" class="ad">
+		<!--  check cloud_footer == true in production then dont display this add -->
+		<p align="center"><br clear="all"><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200449/0/225/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Bottom_728x90;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200449/0/225/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Bottom_728x90;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200449/0/225/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Bottom_728x90;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+</p>
+	</div>
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/footernav/oct2012/footergreyblack.css" />
+
+
+<!-- BEGIN GREY FOOTER -->
+<div align="center">
+  <div id="footergrey">
+    <!--GREY FOOTER LEFT SIDE -->
+    <div id="left">
+    <a href="http://tech.ubm.com/" target="_blank"><img src="http://twimgs.com/informationweek/footernav/oct2012/ubm_tech_logo_footer_grey88x111.jpg" width="88" height="111" border="0" alt="UBM Tech"></a>
+    </div><!-- / GREY FOOTER LEFT SIDE -->
+    <!-- GREY FOOTER rightlinks SIDE -->
+    <div id="rightlinks">
+      <ul>
+        <li>FEATURED UBM TECH SITES: 
+        <li><a name="footer" href="http://www.informationweek.com/" target="_blank">InformationWeek</a></li> | 
+        <li><a name="footer" href="http://www.networkcomputing.com/" target="_blank">Network Computing</a></li> | 
+        <li><a name="footer" href="http://www.drdobbs.com/" target="_blank">Dr. Dobb's</a></li> | 
+        <li><a name="footer" href="http://www.darkreading.com/" target="_blank">Dark Reading</a></li> 
+      </ul>
+      <ul>
+      <li>OUR MARKETS: 
+        <li><a href="http://tech.ubm.com/businesses/business-technology/" target="_blank">Business Technology</a></li> | 
+        <li><a href="http://tech.ubm.com/businesses/channel/" target="_blank">Channel</a></li> | 
+        <li><a href="http://tech.ubm.com/businesses/electronics/" target="_blank">Electronics</a></li> | 
+        <li><a href="http://tech.ubm.com/businesses/game-app-development/" target="_blank">Game & App Development</a></li>
+      </ul>
+      <ul class="normal">
+      <li><b>Working With Us:</b>
+        <li><a href="http://createyournextcustomer.techweb.com/contact-us/" target="_blank" class="normal">Advertising Contacts</a></li> | 
+        <li><a href="http://events.ubm.com/?company=10" target="_blank" class="normal">Event Calendar</a></li> | 
+        <li><a href="http://createyournextcustomer.techweb.com" target="_blank" class="normal">Tech Marketing Solutions</a></li> | 
+        <li><a href="http://tech.ubm.com/" target="_blank" class="normal">Corporate Site</a></li> | 
+        <li><a href="mailto:feedback@techweb.com" target="_blank" class="normal">Contact Us / Feedback</a></li> 
+      </ul>
+      <ul class="blue">
+        <li><a href="http://legal.us.ubm.com/terms-of-service/" target="_blank" class="blue">Terms of Service</a></li>  |
+        <li><a href="http://legal.us.ubm.com/privacy-policy/" target="_blank" class="blue">Privacy Statement</a></li>  |
+        <li><a href="http://legal.us.ubm.com/copyright-notice/" target="_blank" class="blue">Copyright &#169; 2013 UBM Tech, All rights reserved</a></li>
+      </ul>
+    </div><!-- / GREY FOOTER rightlinks -->
+    <div style="clear:both;"></div><!-- // to clear the right and left evenly // -->
+  </div><!-- / END footergrey -->
+</div><!-- / END align="center" -->
+<!-- / END GREY FOOTER -->
+
+
+<br />
+
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqCfg.js'></SCRIPT>
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqImg.js'></SCRIPT>
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-bpaww&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-bpaww&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+<style>
+#footer #footer2 li{
+	background: none;
+}
+</style>
+<div id="footer2">
+      
+	<div id="footer-a">
+	  <center>
+      <ul>  
+        <li><a href="http://www.informationweek.com/" class="first">InformationWeek Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/columns">Commentary</a></li>
+        <li><a href="/video">Video</a></li>
+        <li><a href="/galleries">Slideshows</a></li>
+        <li><a href="/software">Software</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/cloud-computing">Cloud</a></li>
+        <li><a href="/mobility">Mobility</a></li>
+        <li><a href="/social-business">Social Business</a></li><BR>
+        <li><a href="/personal-tech">Personal Tech</a></li>
+<!--        <li><a href="/hardware">Hardware</a></li>-->
+        <li><a href="/windows">Windows</a></li>
+        <li><a href="/education">Education</a></li>        
+        <!-- <li><a href="/internet">Internet</a></li> -->
+        <li><a href="/global-cio">Global CIO</a></li>
+        <li><a href="/government">Government</a></li>
+        <li><a href="/healthcare">Healthcare</a></li>
+        <li><a href="/financialservices">Financial</a></li>
+        <li><a href="/smb">SMB</a></li>
+        <!-- <li><a href="http://www.techcareers.com/?affiliate=iwk">Careers</a></li> -->
+      </ul>
+	  </center>
+	</div>
+	  
+	<div id="footer-b">
+	  <center>
+      <ul> 
+        <!-- <li><a href="http://www.informationweek.com/GLOBAL/misc/member.jhtml" class="first">Become A Member/Membership Benefits</a></li> -->
+        <li><a href="/aboutus" class="first">About Us</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
+        <li><a href="/customer-support">Customer Support</a></li>
+        <li><a href="/thisweek">Current Issue</a></li>
+        <li><a href="/maindocs/archive.htm">Back Issues</a></li>
+        <li><a href="/sitemap/index.html">Site Map</a></li>
+        <li><a href="http://www.wrightsreprints.com/reprints/?magid=2196" target="_blank">Reprints</a></li>
+        <!-- <li><a href="http://briefingcenters.techweb.com/">Briefing Centers</a></li> -->
+        <li><a href="/edcal/default.html">Editorial Calendar</a></li>
+
+        <!-- <li><a href="http://www.informationweek.com/whitepaper/">White Papers</a></li> -->
+        <!-- <li><a href="http://createyournextcustomer.com/contact-us/" target="_blank">Advertising Contacts</a></li> -->
+        <!-- <li><a href="http://createyournextcustomer.com/" target="_blank">Technology Marketing Solutions</a></li> -->
+      </ul>
+	  </center>
+	</div>
+
+<!--   
+	<div id="footer-c">
+		<center>
+		<ul>
+	        <li><a href="http://www.cmp.com/onlinelist" class="first">Other Techweb Sites:</a></li>
+	        <li><a href="http://www.informationweek.de/">Informationweek Germany</a></li>
+	        <li><a href="http://www.networkcomputing.com/">Network Computing</a></li>
+	        <li><a href="http://www.techweb.com/">TechWeb</a></li>
+	        <li><a href="http://www.intelligententerprise.com/">Intelligent Enterprise</a></li><BR>
+	
+	
+	        <li><a href="http://www.darkreading.com/" class="first">Dark Reading</a></li>
+	        <li><a href="http://www.lightreading.com/">Light Reading</a></li>
+	        <li><a href="http://www.byteandswitch.com/">Byte & Switch</a></li>
+	        <li><a href="http://www.internetevolution.com/">Internet Evolution</a></li>
+	        <li><a href="http://www.bmighty.com/">bMighty</a></li>
+	<java>
+	out.println("<li><a href=\"http://www.smallbizresource.com/\" rel=\"cm8\">Small Biz Resource</a></li>");
+	</java>
+	<BR>
+	
+	        <li><a href="http://www.insuranceandtech.com/" class="first">Insurance & Technology</a></li>
+	        <li><a href="http://www.wallstreetandtech.com/">Wall Street & Technology</a></li>
+	        <li><a href="http://www.banktech.com/">Bank Systems & Technology</a></li>
+	        <li><a href="http://www.advancedtrading.com/">Advanced Trading</a></li>
+		
+		</ul>
+		</center>
+	</div> -->
+
+      <!-- <div id="copyright">
+        <p><a href="http://ubmtechnology.com/united-business-media-llc-terms-of-service/" rel="nofollow" target="_blank">Terms of Service</a> | <a href="http://ubmtechnology.com/united-business-media-llc-privacy-statement/" rel="nofollow" target="_blank">Privacy Statement</a> | <a href="http://www.cmp.com/delivery/copyright.html" rel="nofollow" target="_blank">Copyright &copy; 2010 United Business Media LLC, All rights reserved.</a></p>
+      </div> -->
+	  
+</div>
+<!-- END: Footer2 -->
+</div> 
+<!-- END: Footer -->
+
+
+<!-- Ad Roll Retargeting Cookie added as per Loria 3/25/12 -->
+<script type="text/javascript">
+adroll_adv_id = "TQSV74R4GVCSJITSZC2MCP";
+adroll_pix_id = "ACPJ7LN56VBITNNAUDPDMG";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+<!-- /Ad Roll Retargeting Cookie -->
+
+
+
+</div>
+<!-- END: Footer -->
+</footer><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200533/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Pagepeel_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=100;target=_blank;grp=70528508;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200533/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Pagepeel_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200533/0/16/ADTECH;alias=InformationWeek_Mobility_Wireless_Security_Pagepeel_1x1;key=240154955+mobility+/mobility/security/vmware-fights-android-byod-headaches/2401;kvarticleid=240154955;kauthor=Michael Endler;loc=300;grp=70528508;" border="0" width="" height=""></img></a></noscript>
+
+
+<!-- Default Insight Tag -->
+<script type="text/javascript">
+  var _bizo_data_partner_id = "590";
+  </script>
+<script type="text/javascript">
+  var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js.");
+  document.write(unescape("%3Cscript src='" + _bizo_p + "bizographics.com/convert_data.js?partner_id=" + _bizo_data_partner_id + "' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+<!--   Disqus related changes.  -->             
+            
+<script type="text/javascript">
+                           
+                var disqus_shortname = 'iwk';
+                                /* * * DON'T EDIT BELOW THIS LINE * * */
+                 (function () {
+                var s = document.createElement('script'); s.async = true;
+                  s.type = 'text/javascript';
+                 s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                 (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                 }());
+</script>
+         
+
+<!-- SiteCatalyst code version: H.16.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script type="text/javascript" src="http://i.ubm-us.net/shared/omniture/h_s_code_remote.js" ></script>
+
+<script language='JavaScript' type='text/javascript'>
+	var referer = '';
+	var eVar23 = '';
+	var userAgent = '';
+	$.ajax({
+	   type: "GET",
+	   url: "/omniture",
+	   data: "referer="+encodeURIComponent(document.referrer),
+	   success: function(data){		   
+		   if (data != null)
+			{
+				referer = data.referer;
+				eVar23 = data.eVar23;
+				userAgent = data.userAgent;					
+			}
+	   },
+	   dataType: "json",
+	   async: false,
+	   cache: false
+	 }	
+	 );
+	
+	 
+</script>
+
+<script language='JavaScript' type='text/javascript'>
+
+<!--
+s.pageURL="http://www.informationweek.com/mobility/security/vmware-fights-android-byod-headaches/240154955";
+s.pageName="";
+s.referrer=referer;
+s.server="";
+s.channel="informationweek.com/mobility";
+s.pageType="";
+s.prop1="";
+s.prop2="240154955";
+s.prop3="InformationWeek | 240154955 | VMware Fights Android BYOD Headaches";
+s.prop4="VMware Fights Android BYOD Headaches";
+s.prop5="mobility";
+s.prop6="";
+s.prop7="Michael Endler";
+s.prop8=userAgent;
+s.prop9="";
+s.prop10="complete";
+s.prop11="News";
+s.prop12="";
+s.prop14="";
+s.prop15="";
+s.prop16="";
+s.prop19="False";
+s.prop20="20130515";
+s.prop21="";
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="event5,event17";
+s.products="";
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+s.eVar6="";
+s.eVar8="";
+s.eVar21="";
+s.eVar22="";
+s.eVar23=eVar23;
+s.eVar31="Insights|Related Reading|Events|Whitepapers|Reports";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//-->	
+</script>
+
+<script language="JavaScript" type="text/javascript">
+
+   function trackComment(){
+    	        var s=s_gi('cmpglobalvista'); 
+                s.evar24=s.prop7 +" | "+ s.prop4;  
+  			    s.events='event5,event9';
+  			    s.tl(this,'o','Article Comment Posted');
+          
+   }
+</script>
+
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://cmpglobalvista.112.2O7.net/b/ss/cmpglobalvista/1/H.16--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+
+
+<!-- End SiteCatalyst code version: H.16 -->			
+
+
+
+
+
+</body>
+
+</html>
