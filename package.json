@@ -1,5 +1,5 @@
 {
-  "name": "htmlparser2-benchmark",
+  "name": "htmlparser-benchmark",
   "description": "Simple benchmark for htmlparser2 using real-life data",
   "version": "1.0.0",
   "author": "Andreas Madsen <amwebdk@gmail.com>",
