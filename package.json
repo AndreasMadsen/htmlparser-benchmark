@@ -1,7 +1,7 @@
 {
   "name": "htmlparser2-benchmark",
   "description": "Simple benchmark for htmlparser2 using real-life data",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": "Andreas Madsen <amwebdk@gmail.com>",
   "main": "./index.js",
    "scripts": {
@@ -17,8 +17,16 @@
   ],
   "dependencies": {
     "async": "0.2.x",
-    "summary": "0.3.x",
-    "startpoint": "0.3.x"
+    "summary": "0.3.x"
+  },
+  "devDependencies": {
+  	"progress": "1.0.x",
+  	"html-parser": "*",
+  	"htmlparser": "*",
+  	"htmlparser2": "*",
+  	"hubbub": "*",
+  	"libxmljs": "*",
+  	"sax": "*"
   },
   "license": "MIT",
   "engines": {

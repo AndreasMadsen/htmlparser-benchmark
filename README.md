@@ -1,30 +1,51 @@
-#htmlparser2-benchmark
+#htmlparser-benchmark
 
-> Simple benchmark for [htmlparser2](https://github.com/fb55/htmlparser2) using real-life data
+> Simple benchmark for diffrent htmlparsers using real-life data
 
 ## Installation
 
 ```sheel
-npm install htmlparser2-benchmark
+npm install htmlparser-benchmark
 ```
 
 ## How to run
 
-You can either use this as a module:
+#### Use as a module
 
 ```javascript
-var bench = require('htmlparser2-benchmark');
+var benchmark = require('htmlparser-benchmark');
+var Parser = require("htmlparser2").Parser;
 
-bench(require('htmlparser2').Parser, function (err, stat) {
+var bench = benchmark(function (html, callback) {
+	var parser = new Parser({
+		onend: callback,
+		onerror: callback
+	});
+	parser.end(html);
+});
 
+bench.on('progress', function (key) {
+	console.log('finished parsing ' + key + '.html');
+});
+
+bench.on('result', function (stat) {
+	console.log(stat.mean().toPrecision(6) + ' ms/file ± ' + stat.sd().toPrecision(6));
 });
 ```
 
-Where `stat` is a [Summary](https://github.com/AndreasMadsen/summary) object,
-note that executing this method will output progress and result to `stdout`.
+Where `stat` is a [Summary](https://github.com/AndreasMadsen/summary) object.
 
-You can also just run `npm test` that will also run the benchmark as long as
-the `htmlparser2` module exists somewhere in the module search path.
+#### Use the script
+
+You can also just run `npm test`, that will benchmark all the modules listed
+in the `wrapper` directory. Note that you will need to install the `dev-dependencies`
+first.
+
+```shell
+cd htmlparser-benchmark
+npm install
+npm test
+```
 
 ## License
 
