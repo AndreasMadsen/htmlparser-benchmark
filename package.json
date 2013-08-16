@@ -9,7 +9,7 @@
   },
   "repository" : {
     "type": "git",
-    "url": "git://github.com/AndreasMadsen/htmlparser2-benchmark.git"
+    "url": "git://github.com/AndreasMadsen/htmlparser-benchmark.git"
   },
   "keywords": [
     "htmlparser2",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
   	"progress": "1.0.x",
+    "gumbo-parser": "*",
   	"html-parser": "*",
   	"htmlparser": "*",
   	"htmlparser2": "*",
