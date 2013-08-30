@@ -27,7 +27,9 @@
   	"htmlparser2": "*",
   	"hubbub": "*",
   	"libxmljs": "*",
-  	"sax": "*"
+  	"sax": "*",
+    "html5": "*",
+    "parse5": "*"
   },
   "license": "MIT",
   "engines": {
