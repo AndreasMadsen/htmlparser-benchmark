@@ -4,7 +4,7 @@
 
 ## Installation
 
-```sheel
+```shell
 npm install htmlparser-benchmark
 ```
 
