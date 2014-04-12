@@ -25,6 +25,7 @@
   	"html-parser": "*",
   	"htmlparser": "*",
   	"htmlparser2": "*",
+    "high5": "*",
   	"hubbub": "*",
   	"libxmljs": "*",
   	"sax": "*",
