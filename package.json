@@ -1,7 +1,7 @@
 {
   "name": "htmlparser-benchmark",
   "description": "Simple benchmark for htmlparser2 using real-life data",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Andreas Madsen <amwebdk@gmail.com>",
   "main": "./index.js",
    "scripts": {
