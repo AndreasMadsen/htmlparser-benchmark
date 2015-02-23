@@ -30,7 +30,8 @@
   	"libxmljs": "*",
   	"sax": "*",
     "html5": "*",
-    "parse5": "*"
+    "parse5": "*",
+    "neutron-html5parser": "*"
   },
   "license": "MIT",
   "engines": {
