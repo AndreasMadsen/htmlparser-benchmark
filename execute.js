@@ -26,7 +26,7 @@ function equalWidth(name) {
 async.eachSeries(
 	wrappers,
 	function (item, done) {
-		var runner = fork(path.join(__dirname, '/_run.js'));
+		var runner = fork(path.join(__dirname, '_run.js'));
 		runner.send(item);
 		runner.on('message', function (stat) {
 			console.log(
@@ -35,7 +35,13 @@ async.eachSeries(
 				stat.mean.toPrecision(6),
 				stat.sd.toPrecision(6)
 			);
-			done(null);
+		});
+
+		runner.on('close', function (n) {
+			if (n) {
+				console.log('%s failed (exit code %d)', item.name, n);
+			}
+			done();
 		});
 	},
 	function () {}

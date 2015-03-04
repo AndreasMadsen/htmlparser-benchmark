@@ -2,6 +2,10 @@
 var Benchmark = require('./index.js');
 var ProgressBar = require('progress');
 
+process.on('uncaughtException', function(e){
+	process.exit(1);
+});
+
 process.on('message', function (item) {
 	var bar = new ProgressBar('[:bar] :current / :total', {
 		total: Benchmark.TOTAL,
