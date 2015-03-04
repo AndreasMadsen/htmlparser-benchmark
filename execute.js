@@ -12,8 +12,12 @@ var wrappers = fs.readdirSync(path.join(__dirname, 'wrapper'))
 		};
 	});
 
+var MAX_WIDTH = Math.max.apply(Math, wrappers.map(function (wrapper) {
+	return wrapper.name.length;
+}));
+
 function equalWidth(name) {
-	var left = 15 - name.length;
+	var left = MAX_WIDTH - name.length;
 	var str = name;
 	for (var i = 0; i < left; i++) str += ' ';
 	return str;
