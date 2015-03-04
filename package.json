@@ -20,15 +20,17 @@
     "summary": "0.3.x"
   },
   "devDependencies": {
-  	"progress": "1.0.x",
+  	"progress": "1.0.x"
+  },
+  "optionalDependencies": {
     "gumbo-parser": "*",
-  	"html-parser": "*",
-  	"htmlparser": "*",
-  	"htmlparser2": "*",
+    "html-parser": "*",
+    "htmlparser": "*",
+    "htmlparser2": "*",
     "high5": "*",
-  	"hubbub": "*",
-  	"libxmljs": "*",
-  	"sax": "*",
+    "hubbub": "*",
+    "libxmljs": "*",
+    "sax": "*",
     "html5": "*",
     "parse5": "*",
     "neutron-html5parser": "*"
