@@ -16,25 +16,25 @@
     "benchmark"
   ],
   "dependencies": {
-    "async": "0.2.x",
-    "summary": "0.3.x"
+    "async": "^3.1.0",
+    "summary": "^1.0.0"
   },
   "devDependencies": {
-    "progress": "1.0.x"
+    "progress": "^2.0.3"
   },
   "optionalDependencies": {
-    "html5parser": "*",
-    "gumbo-parser": "*",
-    "html-parser": "*",
-    "htmlparser": "*",
-    "htmlparser2": "*",
-    "high5": "*",
-    "hubbub": "*",
-    "libxmljs": "*",
-    "sax": "*",
-    "html5": "*",
-    "parse5": "*",
-    "neutron-html5parser": "*"
+    "html5parser": "^1.1.0",
+    "gumbo-parser": "^0.3.0",
+    "html-parser": "^0.11.0",
+    "htmlparser": "^1.7.7",
+    "htmlparser2": "^3.10.1",
+    "high5": "^1.0.0",
+    "hubbub": "^0.6.2",
+    "libxmljs": "^0.19.5",
+    "sax": "^1.2.4",
+    "html5": "^1.0.5",
+    "parse5": "^5.1.0",
+    "neutron-html5parser": "^0.2.0"
   },
   "license": "MIT",
   "engines": {
