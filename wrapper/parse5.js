@@ -1,8 +1,6 @@
+var parse5 = require('parse5');
 
-var Parser = require('parse5').Parser;
-
-module.exports = function (html, callback) {
-	var parser = new Parser();
-	parser.parse(html);
+module.exports = function(html, callback) {
+	parse5.parse(html.toString());
 	callback();
 };
