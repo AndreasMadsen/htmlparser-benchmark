@@ -28,6 +28,7 @@
     "html-parser": "^0.11.0",
     "htmlparser": "^1.7.7",
     "htmlparser2": "^3.10.1",
+    "node-html-parser": "^1.4.5",
     "high5": "^1.0.0",
     "hubbub": "^0.6.2",
     "libxmljs": "^0.19.5",
