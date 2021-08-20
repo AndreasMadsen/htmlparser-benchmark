@@ -23,18 +23,19 @@
     "progress": "^2.0.3"
   },
   "optionalDependencies": {
-    "html5parser": "^1.1.0",
     "gumbo-parser": "^0.3.0",
+    "high5": "^1.0.0",
     "html-parser": "^0.11.0",
+    "html5": "^1.0.5",
+    "html5parser": "^1.1.0",
     "htmlparser": "^1.7.7",
     "htmlparser2": "^3.10.1",
-    "high5": "^1.0.0",
     "hubbub": "^0.6.2",
     "libxmljs": "^0.19.5",
-    "sax": "^1.2.4",
-    "html5": "^1.0.5",
+    "neutron-html5parser": "^0.2.0",
+    "node-html-parser": "^3.0.1",
     "parse5": "^5.1.0",
-    "neutron-html5parser": "^0.2.0"
+    "sax": "^1.2.4"
   },
   "license": "MIT",
   "engines": {
