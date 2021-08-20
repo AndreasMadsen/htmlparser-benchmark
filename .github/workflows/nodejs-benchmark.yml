@@ -3,17 +3,24 @@ name: Node.js Benchmark
 on: [push]
 
 env:
-  CI: true
-  FORCE_COLOR: 2
+    CI: true
+    FORCE_COLOR: 2
 
 jobs:
-  bench:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          cache: npm
-      - run: npm ci
-      - run: npm test
+    bench:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: 16
+                  cache: npm
+            - run: npm ci
+            - run: npm test
+            - name: Create commit
+              uses: stefanzweifel/git-auto-commit-action@v4.11.0
+              with:
+                  commit_message: 'Update benchmark results'
+                  branch: master
+                  file_pattern: stats.txt
+                  disable_globbing: true
