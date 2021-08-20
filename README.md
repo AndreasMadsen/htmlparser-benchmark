@@ -1,6 +1,17 @@
-#htmlparser-benchmark
+# htmlparser-benchmark
 
 > Simple benchmark for diffrent htmlparsers using real-life data
+
+## What is this good for?
+
+Don't use a particular parser just because it shows good results in this benchmark.
+Instead, this benchmark is best for comparing changes between individual versions of parsers,
+as well as for parser authors to see how much room for improvement there is.
+
+Even though all libraries included in this benchmark parse something HTML-like, most don't fully follow
+the HTML spec. As of August 2021, [`parse5`](https://www.npmjs.com/package/parse5) is the only
+fully spec compliant HTML parser available for NodeJS. If you are okay with slightly different results,
+have a look at the libraries benchmarked here and pick the one with the ideal trade-offs for your scenario.
 
 ## Installation
 
@@ -13,23 +24,25 @@ npm install htmlparser-benchmark
 #### Use as a module
 
 ```javascript
-var benchmark = require('htmlparser-benchmark');
+var benchmark = require("htmlparser-benchmark");
 var Parser = require("htmlparser2").Parser;
 
 var bench = benchmark(function (html, callback) {
-	var parser = new Parser({
-		onend: callback,
-		onerror: callback
-	});
-	parser.end(html);
+  var parser = new Parser({
+    onend: callback,
+    onerror: callback,
+  });
+  parser.end(html);
 });
 
-bench.on('progress', function (key) {
-	console.log('finished parsing ' + key + '.html');
+bench.on("progress", function (key) {
+  console.log("finished parsing " + key + ".html");
 });
 
-bench.on('result', function (stat) {
-	console.log(stat.mean().toPrecision(6) + ' ms/file ± ' + stat.sd().toPrecision(6));
+bench.on("result", function (stat) {
+  console.log(
+    stat.mean().toPrecision(6) + " ms/file ± " + stat.sd().toPrecision(6)
+  );
 });
 ```
 
