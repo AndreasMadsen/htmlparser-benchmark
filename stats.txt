@@ -1,0 +1,13 @@
+htmlparser2        : 2.44408 ms/file ± 4.39190
+node-html-parser   : 2.60622 ms/file ± 1.73791
+html5parser        : 2.69533 ms/file ± 3.04607
+neutron-html5parser: 2.75180 ms/file ± 1.78151
+htmlparser2-dom    : 3.41119 ms/file ± 4.62044
+html-dom-parser    : 4.35703 ms/file ± 6.11903
+libxmljs           : 4.48851 ms/file ± 3.28640
+htmljs-parser      : 6.77997 ms/file ± 8.73689
+parse5             : 11.3745 ms/file ± 8.05398
+htmlparser         : 18.3297 ms/file ± 112.477
+html-parser        : 34.5612 ms/file ± 26.2457
+saxes              : 54.2628 ms/file ± 152.361
+html5              : 143.556 ms/file ± 185.295
