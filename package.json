@@ -32,7 +32,7 @@
     "htmljs-parser": "^2.11.1",
     "libxmljs": "^0.19.7",
     "neutron-html5parser": "^0.2.0",
-    "node-html-parser": "^5.0.0",
+    "node-html-parser": "^5.1.0",
     "parse5": "^6.0.1",
     "saxes": "^5.0.1"
   },
