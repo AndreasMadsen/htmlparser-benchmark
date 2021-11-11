@@ -1,6 +1,6 @@
 # htmlparser-benchmark
 
-> Simple benchmark for diffrent htmlparsers using real-life data
+> Simple benchmark for different htmlparsers using real-life data
 
 ## What is this good for?
 
