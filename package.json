@@ -23,7 +23,7 @@
     "progress": "^2.0.3"
   },
   "optionalDependencies": {
-    "html-dom-parser": "^1.0.2",
+    "html-dom-parser": "^1.0.3",
     "html-parser": "^0.11.0",
     "html5": "^1.0.1",
     "html5parser": "^2.0.2",
