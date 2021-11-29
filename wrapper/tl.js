@@ -1,6 +1,8 @@
 const tljs = require('@y21/tljs');
+const { callbackify } = require('util');
 tljs.initializeWasmSync();
 
+const parse = callbackify(tljs.parse);
 module.exports = function(html, callback) {
-    tljs.parse(html).then(() => callback());
+    parse(html, callback);
 }
