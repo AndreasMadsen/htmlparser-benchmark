@@ -23,13 +23,14 @@
     "progress": "^2.0.3"
   },
   "optionalDependencies": {
+    "@y21/tljs": "^0.2.4",
     "html-dom-parser": "^1.0.3",
     "html-parser": "^0.11.0",
     "html5": "^1.0.1",
     "html5parser": "^2.0.2",
+    "htmljs-parser": "^2.11.1",
     "htmlparser": "^1.7.7",
     "htmlparser2": "^7.2.0",
-    "htmljs-parser": "^2.11.1",
     "libxmljs": "^0.19.7",
     "neutron-html5parser": "^0.2.0",
     "node-html-parser": "^5.1.0",
