@@ -1,13 +1,14 @@
-htmlparser2        : 2.49432 ms/file ± 3.93528
-html5parser        : 2.90979 ms/file ± 3.53148
-node-html-parser   : 3.06143 ms/file ± 1.94363
-htmlparser2-dom    : 3.21391 ms/file ± 4.31013
-neutron-html5parser: 3.24992 ms/file ± 1.90590
-html-dom-parser    : 4.51139 ms/file ± 5.69740
-libxmljs           : 5.15464 ms/file ± 3.78116
-htmljs-parser      : 7.01859 ms/file ± 8.15005
-parse5             : 11.2704 ms/file ± 8.15706
-htmlparser         : 18.9283 ms/file ± 115.092
-html-parser        : 33.4568 ms/file ± 25.6831
-saxes              : 67.8742 ms/file ± 192.135
-html5              : 148.604 ms/file ± 189.625
+tl                 : 1.29993 ms/file ± 0.839902
+htmlparser2        : 2.65228 ms/file ± 3.80942
+html5parser        : 2.96873 ms/file ± 3.53555
+node-html-parser   : 3.08266 ms/file ± 2.03715
+neutron-html5parser: 3.11826 ms/file ± 1.89618
+htmlparser2-dom    : 3.32490 ms/file ± 4.17178
+html-dom-parser    : 3.43142 ms/file ± 4.42218
+libxmljs           : 5.02790 ms/file ± 3.76353
+htmljs-parser      : 6.55972 ms/file ± 7.61604
+parse5             : 12.0675 ms/file ± 8.18429
+htmlparser         : 27.9060 ms/file ± 201.393
+html-parser        : 33.5740 ms/file ± 25.9676
+saxes              : 64.0471 ms/file ± 181.147
+html5              : 142.636 ms/file ± 185.982
