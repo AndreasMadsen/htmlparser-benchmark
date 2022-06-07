@@ -16,7 +16,7 @@
     "benchmark"
   ],
   "dependencies": {
-    "async": "^3.2.3",
+    "async": "^3.2.4",
     "summary": "^2.1.0"
   },
   "devDependencies": {
