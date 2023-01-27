@@ -1,7 +1,7 @@
-var HTMLtoDOM = require('neutron-html5parser')();
+const HTMLtoDOM = require('neutron-html5parser')();
 
 module.exports = function (html, callback) {
-	var noop = function () {};
+	const noop = function () {};
 	HTMLtoDOM.Parser(html, {
 		start: noop,
 		end: noop,

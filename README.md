@@ -24,24 +24,24 @@ npm install htmlparser-benchmark
 #### Use as a module
 
 ```javascript
-var benchmark = require('htmlparser-benchmark');
-var Parser = require('htmlparser2').Parser;
+const Benchmark = require('htmlparser-benchmark');
+const { Parser } = require('htmlparser2');
 
-var bench = benchmark(function (html, callback) {
-	var parser = new Parser({
+const bench = new Benchmark((html, callback) => {
+	const parser = new Parser({
 		onend: callback,
 		onerror: callback,
 	});
 	parser.end(html);
 });
 
-bench.on('progress', function (key) {
-	console.log('finished parsing ' + key + '.html');
+bench.on('progress', (key) => {
+	console.log(`finished parsing ${key}.html`);
 });
 
-bench.on('result', function (stat) {
+bench.on('result', (stat) => {
 	console.log(
-		stat.mean().toPrecision(6) + ' ms/file ± ' + stat.sd().toPrecision(6),
+		`${stat.mean().toPrecision(6)} ms/file ± ${stat.sd().toPrecision(6)}`,
 	);
 });
 ```

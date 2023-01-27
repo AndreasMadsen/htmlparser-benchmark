@@ -1,10 +1,8 @@
-var htmlparser2 = require('htmlparser2'),
-	Parser = htmlparser2.Parser,
-	Handler = htmlparser2.DomHandler;
+const { Parser, DomHandler } = require('htmlparser2');
 
 module.exports = function (html, callback) {
-	var handler = new Handler();
-	var parser = new Parser(handler);
+	const handler = new DomHandler();
+	const parser = new Parser(handler);
 	parser.parseComplete(html);
 	callback(null);
 };

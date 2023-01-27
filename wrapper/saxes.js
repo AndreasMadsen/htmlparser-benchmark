@@ -1,7 +1,7 @@
-var saxes = require('saxes');
+const saxes = require('saxes');
 
 module.exports = function (html, callback) {
-	var parser = new saxes.SaxesParser();
+	const parser = new saxes.SaxesParser();
 
 	parser.onend = callback;
 	parser.onerror = callback;

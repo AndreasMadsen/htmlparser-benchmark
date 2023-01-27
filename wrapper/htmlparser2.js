@@ -1,7 +1,7 @@
-var Parser = require('htmlparser2').Parser;
+const { Parser } = require('htmlparser2');
 
 module.exports = function (html, callback) {
-	var parser = new Parser({
+	const parser = new Parser({
 		onend: callback,
 		onerror: callback,
 	});

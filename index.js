@@ -1,62 +1,57 @@
-var fs = require('fs');
-var path = require('path');
-var util = require('util');
-var events = require('events');
+const fs = require('fs');
+const path = require('path');
+const events = require('events');
 
-var async = require('async');
-var summary = require('summary');
+const async = require('async');
+const summary = require('summary');
 
-var FILES = fs
+const FILES = fs
 	.readdirSync(path.resolve(__dirname, 'files'))
-	.map(function (filename, index) {
-		return {
-			key: path.basename(filename, '.html'),
-			file: path.resolve(__dirname, 'files', filename),
-		};
-	});
+	.map((filename) => ({
+		key: path.basename(filename, '.html'),
+		file: path.resolve(__dirname, 'files', filename),
+	}));
 
-function Benchmark(parser) {
-	if (!(this instanceof Benchmark)) return new Benchmark(parser);
+class Benchmark extends events.EventEmitter {
+	constructor(parser) {
+		super();
 
-	this._parser = parser;
-	async.mapSeries(FILES, this._file.bind(this), this._done.bind(this));
+		this._parser = parser;
+		async.mapSeries(FILES, this._file.bind(this), this._done.bind(this));
+	}
+	// Parse a file
+	_file(item, done) {
+		fs.readFile(item.file, 'utf8', (err, html) => {
+			if (err) {
+				return done(err);
+			}
+
+			const tic = process.hrtime();
+			this._parser(html, (err) => {
+				const toc = process.hrtime(tic);
+
+				if (err) {
+					done(err, toc);
+				} else {
+					this.emit('progress', item.key);
+					done(null, toc);
+				}
+			});
+		});
+	}
+	// Benchmark for this parser is done
+	_done(err, times) {
+		if (err) {
+			return this.emit('error', err);
+		}
+
+		const stat = summary(times.map((time) => time[0] * 1e3 + time[1] / 1e6));
+
+		this.emit('result', stat);
+	}
 }
-util.inherits(Benchmark, events.EventEmitter);
+
 module.exports = Benchmark;
 
 // The total amount of files
 Benchmark.TOTAL = FILES.length;
-
-// Parse a file
-Benchmark.prototype._file = function (item, done) {
-	var self = this;
-
-	fs.readFile(item.file, 'utf8', function (err, html) {
-		if (err) return done(err);
-
-		var tic = process.hrtime();
-		self._parser(html, function (err) {
-			var toc = process.hrtime(tic);
-
-			if (err) {
-				done(err, toc);
-			} else {
-				self.emit('progress', item.key);
-				done(null, toc);
-			}
-		});
-	});
-};
-
-// Benchmark for this parser is done
-Benchmark.prototype._done = function (err, times) {
-	if (err) return this.emit('error', err);
-
-	var stat = summary(
-		times.map(function (time) {
-			return time[0] * 1e3 + time[1] / 1e6;
-		}),
-	);
-
-	this.emit('result', stat);
-};

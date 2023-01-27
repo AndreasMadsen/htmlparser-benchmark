@@ -1,26 +1,26 @@
-var Benchmark = require('./index.js');
-var ProgressBar = require('progress');
+const Benchmark = require('./index.js');
+const ProgressBar = require('progress');
 
-process.on('uncaughtException', function (e) {
+process.on('uncaughtException', (e) => {
 	process.exit(1);
 });
 
-process.on('message', function (item) {
-	var bar = new ProgressBar('[:bar] :current / :total', {
+process.on('message', (item) => {
+	const bar = new ProgressBar('[:bar] :current / :total', {
 		total: Benchmark.TOTAL,
 		complete: '=',
 		incomplete: ' ',
 		width: 50,
 	});
 
-	var parser = require(item.parser);
-	var bench = new Benchmark(parser);
+	const parser = require(item.parser);
+	const bench = new Benchmark(parser);
 
-	bench.on('progress', function () {
+	bench.on('progress', () => {
 		bar.tick();
 	});
 
-	bench.once('result', function (stat) {
+	bench.once('result', (stat) => {
 		process.send({
 			mean: stat.mean(),
 			sd: stat.sd(),

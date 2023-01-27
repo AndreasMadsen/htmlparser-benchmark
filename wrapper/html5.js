@@ -1,8 +1,8 @@
-var Parser = require('html5').SAXParser;
+const Parser = require('html5').SAXParser;
 
 module.exports = function (html, callback) {
-	var parser = new Parser();
-	var noop = function () {};
+	const parser = new Parser();
+	const noop = function () {};
 	parser.contentHandler = {
 		startDocument: noop,
 		endDocument: noop,
