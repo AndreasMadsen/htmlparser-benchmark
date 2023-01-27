@@ -36,6 +36,7 @@
 		"neutron-html5parser": "^0.2.0",
 		"node-html-parser": "^5.3.3",
 		"parse5": "^7.0.0",
+		"sax": "^1.2.4",
 		"saxes": "^6.0.0",
 		"zeed-dom": "^0.9.24"
 	},
