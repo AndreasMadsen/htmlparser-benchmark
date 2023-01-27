@@ -1,6 +1,6 @@
-const { parse } = require("node-html-parser");
+const { parse } = require('node-html-parser');
 
 module.exports = function (html, callback) {
-    parse(html);
-    callback(null);
+	parse(html);
+	callback(null);
 };

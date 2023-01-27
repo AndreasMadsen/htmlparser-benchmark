@@ -1,8 +1,7 @@
-
 var Benchmark = require('./index.js');
 var ProgressBar = require('progress');
 
-process.on('uncaughtException', function(e){
+process.on('uncaughtException', function (e) {
 	process.exit(1);
 });
 
@@ -11,7 +10,7 @@ process.on('message', function (item) {
 		total: Benchmark.TOTAL,
 		complete: '=',
 		incomplete: ' ',
-		width: 50
+		width: 50,
 	});
 
 	var parser = require(item.parser);
@@ -24,7 +23,7 @@ process.on('message', function (item) {
 	bench.once('result', function (stat) {
 		process.send({
 			mean: stat.mean(),
-			sd: stat.sd()
+			sd: stat.sd(),
 		});
 		process.exit(0);
 	});

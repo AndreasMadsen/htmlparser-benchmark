@@ -1,43 +1,48 @@
 {
-  "name": "htmlparser-benchmark",
-  "description": "Simple benchmark for htmlparser2 using real-life data",
-  "version": "1.1.3",
-  "author": "Andreas Madsen <amwebdk@gmail.com>",
-  "main": "./index.js",
-  "scripts": {
-    "test": "node execute.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/AndreasMadsen/htmlparser-benchmark.git"
-  },
-  "keywords": [
-    "htmlparser2",
-    "benchmark"
-  ],
-  "dependencies": {
-    "async": "^3.2.4",
-    "summary": "^2.1.0"
-  },
-  "devDependencies": {
-    "progress": "^2.0.3"
-  },
-  "optionalDependencies": {
-    "@arijs/stream-xml-parser": "^0.2.8",
-    "@y21/tljs": "^0.4.0",
-    "html-dom-parser": "^2.0.0",
-    "html-parser": "^0.11.0",
-    "html5": "^1.0.1",
-    "html5parser": "^2.0.2",
-    "htmljs-parser": "^5.0.1",
-    "htmlparser": "^1.7.7",
-    "htmlparser2": "^8.0.1",
-    "libxmljs": "^0.19.10",
-    "neutron-html5parser": "^0.2.0",
-    "node-html-parser": "^5.3.3",
-    "parse5": "^7.0.0",
-    "saxes": "^6.0.0",
-    "zeed-dom": "^0.9.24"
-  },
-  "license": "MIT"
+	"name": "htmlparser-benchmark",
+	"description": "Simple benchmark for htmlparser2 using real-life data",
+	"version": "1.1.3",
+	"author": "Andreas Madsen <amwebdk@gmail.com>",
+	"main": "./index.js",
+	"scripts": {
+		"test": "node execute.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/AndreasMadsen/htmlparser-benchmark.git"
+	},
+	"keywords": [
+		"htmlparser2",
+		"benchmark"
+	],
+	"dependencies": {
+		"async": "^3.2.4",
+		"summary": "^2.1.0"
+	},
+	"devDependencies": {
+		"progress": "^2.0.3"
+	},
+	"optionalDependencies": {
+		"@arijs/stream-xml-parser": "^0.2.8",
+		"@y21/tljs": "^0.4.0",
+		"html-dom-parser": "^2.0.0",
+		"html-parser": "^0.11.0",
+		"html5": "^1.0.1",
+		"html5parser": "^2.0.2",
+		"htmljs-parser": "^5.0.1",
+		"htmlparser": "^1.7.7",
+		"htmlparser2": "^8.0.1",
+		"libxmljs": "^0.19.10",
+		"neutron-html5parser": "^0.2.0",
+		"node-html-parser": "^5.3.3",
+		"parse5": "^7.0.0",
+		"saxes": "^6.0.0",
+		"zeed-dom": "^0.9.24"
+	},
+	"prettier": {
+		"singleQuote": true,
+		"useTabs": true,
+		"trailingComma": "all"
+	},
+	"license": "MIT"
 }

@@ -1,5 +1,4 @@
-
-var AriJS = require("@arijs/stream-xml-parser");
+var AriJS = require('@arijs/stream-xml-parser');
 
 module.exports = function (html, callback) {
 	var builder = new AriJS.TreeBuilder({

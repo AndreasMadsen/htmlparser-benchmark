@@ -1,4 +1,3 @@
-
 var fs = require('fs');
 var path = require('path');
 var util = require('util');
@@ -7,11 +6,12 @@ var events = require('events');
 var async = require('async');
 var summary = require('summary');
 
-var FILES = fs.readdirSync(path.resolve(__dirname, 'files'))
+var FILES = fs
+	.readdirSync(path.resolve(__dirname, 'files'))
 	.map(function (filename, index) {
 		return {
 			key: path.basename(filename, '.html'),
-			file: path.resolve(__dirname, 'files', filename)
+			file: path.resolve(__dirname, 'files', filename),
 		};
 	});
 
@@ -52,9 +52,11 @@ Benchmark.prototype._file = function (item, done) {
 Benchmark.prototype._done = function (err, times) {
 	if (err) return this.emit('error', err);
 
-	var stat = summary(times.map(function (time) {
-		return time[0] * 1e3 + time[1] / 1e6;
-	}));
+	var stat = summary(
+		times.map(function (time) {
+			return time[0] * 1e3 + time[1] / 1e6;
+		}),
+	);
 
 	this.emit('result', stat);
 };

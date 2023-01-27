@@ -1,5 +1,4 @@
-
-var Parser = require("@arijs/stream-xml-parser").XMLParser;
+var Parser = require('@arijs/stream-xml-parser').XMLParser;
 
 module.exports = function (html, callback) {
 	var parser = new Parser(nop);

@@ -1,4 +1,4 @@
-var libxml = require("libxmljs");
+var libxml = require('libxmljs');
 
 module.exports = function (html, callback) {
 	new libxml.parseHtmlString(html);
