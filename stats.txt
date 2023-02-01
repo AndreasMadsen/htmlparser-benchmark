@@ -1,2 +1,18 @@
-htmlparser2        : 1.01323 ms/file ± 1.16257
-htmlparser2-dom    : 1.18936 ms/file ± 1.12197
+htmljs-parser      : 0.909249 ms/file ± 1.74177
+tl                 : 1.00314 ms/file ± 0.596225
+html5parser        : 2.27220 ms/file ± 2.86087
+htmlparser2        : 2.38291 ms/file ± 3.54091
+neutron-html5parser: 2.71487 ms/file ± 1.55680
+html-dom-parser    : 2.84752 ms/file ± 3.66570
+node-html-parser   : 2.97258 ms/file ± 2.03981
+htmlparser2-dom    : 3.08766 ms/file ± 3.95540
+libxmljs           : 4.08195 ms/file ± 2.94816
+zeed-dom           : 4.81243 ms/file ± 2.86443
+parse5             : 6.94351 ms/file ± 8.44206
+sax                : 10.1582 ms/file ± 10.4011
+arijs-stream       : 18.2588 ms/file ± 16.5386
+htmlparser         : 20.5324 ms/file ± 147.010
+arijs-tree         : 20.7174 ms/file ± 19.2804
+html-parser        : 27.9099 ms/file ± 21.0493
+saxes              : 57.6073 ms/file ± 163.581
+html5              : 109.402 ms/file ± 145.644
