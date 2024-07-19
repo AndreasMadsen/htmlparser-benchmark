@@ -25,7 +25,7 @@
 	"optionalDependencies": {
 		"@arijs/stream-xml-parser": "^0.2.10",
 		"@y21/tljs": "^0.4.0",
-		"html-dom-parser": "^5.0.8",
+		"html-dom-parser": "^5.0.9",
 		"html-parser": "^0.11.0",
 		"html5": "^1.0.1",
 		"html5parser": "^2.0.2",
