@@ -23,7 +23,7 @@
 		"progress": "^2.0.3"
 	},
 	"optionalDependencies": {
-		"@arijs/stream-xml-parser": "^0.2.14",
+		"@arijs/stream-xml-parser": "^0.2.15",
 		"@y21/tljs": "^0.4.0",
 		"html-dom-parser": "^5.1.8",
 		"html-parser": "^0.11.0",
