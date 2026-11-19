@@ -38,7 +38,7 @@
 		"parse5": "^8.1.0",
 		"sax": "^1.6.1",
 		"saxes": "^6.0.0",
-		"zeed-dom": "^0.18.0"
+		"zeed-dom": "^0.19.2"
 	},
 	"prettier": {
 		"singleQuote": true,
